@@ -36,7 +36,7 @@ public class DBConfiguration {
     public LocalContainerEntityManagerFactoryBean sessionFactory(DataSource dataSource) {
         LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
         em.setDataSource(dataSource);
-        em.setPackagesToScan("email.model");
+        em.setPackagesToScan(config.getPackagesToScan());
 
         JpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
         em.setJpaVendorAdapter(vendorAdapter);
