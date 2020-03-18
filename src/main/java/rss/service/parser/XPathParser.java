@@ -43,8 +43,8 @@ public class XPathParser {
 
         post.setTitle(getValue(node, template.getHeadline()));
         post.setDescription(getValue(node, template.getSummary()));
-//        post.setAuthor(getValue(node, template.getAuthor()));
-//        post.setPubDate(getValue(node, template.getPosted()));
+        post.setAuthor(getValue(node, template.getAuthor()));
+        post.setPubDate(getValue(node, template.getPosted()));
 
         return post;
     }

@@ -27,11 +27,15 @@ public class XPathParserTest {
         template.setMain("rss/channel/item");
         template.setHeadline("./title/text()");
         template.setSummary("description");
+        template.setPosted("pubDate");
+        template.setAuthor("creator");
 
         Feed feed = parser.parseFeed(stream, template);
 
         assertEquals(20, feed.getPosts().size());
         assertTrue(feed.getPosts().get(0).getTitle().contains("Chrome 80 stable"));
         assertTrue(feed.getPosts().get(0).getDescription().contains("Начали изучать что это такое"));
+        assertEquals("Tue, 17 Mar 2020 23:11:43 GMT", feed.getPosts().get(0).getPubDate());
+        assertEquals("Kolobok86", feed.getPosts().get(0).getAuthor());
     }
 }
