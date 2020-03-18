@@ -23,13 +23,21 @@ public class XPathParser {
     private DocumentBuilderFactory builderFactory;
     private DocumentBuilder builder;
 
-    XPathParser() throws ParserConfigurationException {
-        builderFactory = DocumentBuilderFactory.newInstance();
-        builder = builderFactory.newDocumentBuilder();
+    public XPathParser() {
+        try {
+            builderFactory = DocumentBuilderFactory.newInstance();
+            builder = builderFactory.newDocumentBuilder();
+        } catch (ParserConfigurationException e) {
+            throw new IllegalStateException(e);
+        }
+
     }
 
     public String getValue(Node node, String path) {
         try {
+            if (path == null || path.trim().isEmpty())
+                return "";
+
             XPath xPath = XPathFactory.newInstance().newXPath();
 
             return xPath.compile(path).evaluate(node, XPathConstants.STRING).toString();

@@ -22,22 +22,22 @@ public class Post {
     @JoinColumn
     private Feed feed;
 
-    @Column
+    @Column(columnDefinition = "TEXT")
     private String title;
 
-    @Column
+    @Column(columnDefinition = "TEXT")
     private String description;
 
-    @Column
+    @Column(columnDefinition = "TEXT")
     private String img;
 
     @Column
     private String pubDate;
 
-    @Column
+    @Column(columnDefinition = "TEXT")
     private String author;
 
-    @Column
+    @Column(columnDefinition = "TEXT")
     private String link;
 
     //region getters and setters
@@ -56,6 +56,14 @@ public class Post {
 
     public void setChannel(Channel channel) {
         this.channel = channel;
+    }
+
+    public Feed getFeed() {
+        return feed;
+    }
+
+    public void setFeed(Feed feed) {
+        this.feed = feed;
     }
 
     public String getTitle() {
