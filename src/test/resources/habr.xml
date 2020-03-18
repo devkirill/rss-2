@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel>
+        <title>Все публикации подряд</title>
+        <link>https://habr.com/ru/all/all/</link>
+        <description><![CDATA[Все публикации подряд на Хабре]]></description>
+        <language>ru</language>
+        <managingEditor>editor@habr.com</managingEditor>
+        <generator>habr.com</generator>
+        <pubDate>Tue, 17 Mar 2020 23:14:47 GMT</pubDate>
+
+        <image>
+            <link>https://habr.com/ru/</link>
+            <url>https://habr.com/images/logo.png</url>
+            <title>Хабр</title>
+        </image>
+
+        <item>
+            <title><![CDATA[SameSite=Lax по умолчанию — уже в Chrome 80 stable (правда, пока не у всех)]]></title>
+            <guid isPermaLink="true">https://habr.com/ru/post/492830/</guid>
+            <link>https://habr.com/ru/post/492830/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=492830
+            </link>
+            <description><![CDATA[На днях внимательная коллега (спасибо, Лена) зарепортила странный баг — сервер нормально ставил куку в браузере, но обратно она не прилетала. Днём ранее всё работало, теперь же кука выставлялась, но спустя несколько секунд магическим образом пропадала (хотя должна держаться сутки). Воспроизводилось это всего у нескольких человек в команде и только в новом Chrome 80, но у остальных в Chrome точно такой же версии всё было в порядке. В других браузерах всё работало как часы. Мистика. Начали разбираться, и спустя какое-то время в консоли Chrome заметили предупреждение для заголовка ответа, устанавливающего куки:<br>
+<blockquote><code>A cookie associated with a cross-site resource at _your_domain_ was set without the `SameSite` attribute. A future release of Chrome will only deliver cookies with cross-site requests if they are set with `SameSite=None` and `Secure`.</code></blockquote><br>
+Начали изучать что это такое, и постепенно стало понятно, как ошибка возникла и почему проявлялась не у всех. Поскольку наш сервис должен обрабатывать запросы с разных доменов, то <code>SameSite</code> — как раз наш случай. Добавили <code>SameSite=None; Secure</code>, и проблема для нас решилась.<br>
+<br>
+<h3>Почему так?</h3><br> <a href="https://habr.com/ru/post/492830/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=492830#habracut">Читать дальше &rarr;</a>]]></description>
+
+            <pubDate>Tue, 17 Mar 2020 23:11:43 GMT</pubDate>
+            <dc:creator>Kolobok86</dc:creator>
+            <category><![CDATA[Разработка веб-сайтов]]></category>
+            <category><![CDATA[Google Chrome]]></category>
+            <category><![CDATA[samesite cookie changes]]></category>
+        </item>
+
+
+        <item>
+            <title><![CDATA[Как выжить в мире взаперти]]></title>
+            <guid isPermaLink="true">https://habr.com/ru/post/492828/</guid>
+            <link>https://habr.com/ru/post/492828/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=492828
+            </link>
+            <description><![CDATA[Я уже много лет занимаюсь тем, что создаю для людей искусственные стрессовые ситуации, для того, чтобы выруливая их, люди выходили из них с полезным опытом и становились сильнее чем они были до того, и не сломались по дороге. <br>
+То что я сейчас наблюдаю, так это то, что многие заходят в текущий кризис с моделями поведения, которые увеличат вероятность для них быть сломленными по пути. <br>
+<br>
+В данной статье я собрал некоторые рецепты, которые помогут многим осознанно урегулировать некоторые моменты жизни в карантине и в самоизоляции. <br> <a href="https://habr.com/ru/post/492828/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=492828#habracut">Читать дальше &rarr;</a>]]></description>
+
+            <pubDate>Tue, 17 Mar 2020 21:31:27 GMT</pubDate>
+            <dc:creator>cohe4ko</dc:creator>
+            <category><![CDATA[Управление проектами]]></category>
+            <category><![CDATA[Фриланс]]></category>
+            <category><![CDATA[коронавирус]]></category>
+            <category><![CDATA[туториал]]></category>
+            <category><![CDATA[психическое здоровье]]></category>
+            <category><![CDATA[самоизоляция]]></category>
+        </item>
+
+
+        <item>
+            <title>
+                <![CDATA[Интервью с Сергеем Мневом — профессиональным моддером и основателем команды Tech MNEV]]></title>
+            <guid isPermaLink="true">https://habr.com/ru/post/492786/</guid>
+            <link>https://habr.com/ru/post/492786/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=492786
+            </link>
+            <description><![CDATA[<div style="text-align:center;"><img src="https://habrastorage.org/webt/fn/ex/lh/fnexlhf3qjnezbazrhn9_1kxdi4.jpeg"></div><br>
+Продукция Western Digital пользуется огромной популярностью не только у розничных потребителей и корпоративных клиентов, но и в среде моддеров. И сегодня вас ждет по-настоящему необычный и интересный материал: специально для Хабра мы подготовили интервью с основателем и главой команды Tech MNEV (ранее — Techbeard), специализирующейся на создании кастомных корпусов для ПК, Сергеем Мневом. <a href="https://habr.com/ru/post/492786/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=492786#habracut">Читать дальше &rarr;</a>]]></description>
+
+            <pubDate>Tue, 17 Mar 2020 21:03:01 GMT</pubDate>
+            <dc:creator>WesternDigital</dc:creator>
+            <category><![CDATA[Блог компании Western Digital]]></category>
+            <category><![CDATA[Высокая производительность]]></category>
+            <category><![CDATA[Хранение данных]]></category>
+            <category><![CDATA[Накопители]]></category>
+            <category><![CDATA[Настольные компьютеры]]></category>
+            <category><![CDATA[western digital]]></category>
+            <category><![CDATA[wd]]></category>
+            <category><![CDATA[wd black]]></category>
+            <category><![CDATA[wd black nvme ssd]]></category>
+            <category><![CDATA[ssd]]></category>
+            <category><![CDATA[твердотельные накопители]]></category>
+            <category><![CDATA[твердотельные накопители nvme]]></category>
+            <category><![CDATA[моддинг]]></category>
+            <category><![CDATA[raid]]></category>
+            <category><![CDATA[amd]]></category>
+            <category><![CDATA[threadripper]]></category>
+        </item>
+
+
+        <item>
+            <title><![CDATA[[Из песочницы] .Net Core Api: получение данных в запросе из разных источников]]></title>
+            <guid isPermaLink="true">https://habr.com/ru/post/492820/</guid>
+            <link>https://habr.com/ru/post/492820/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=492820
+            </link>
+            <description><![CDATA[В .Net Core есть встроенный механизм Model Binding, позволяющий не просто принимать входные параметры в контроллерах, а получать сразу объекты с заполненными полями. Это позволяет встроить в такой объект все нужные проверки с помощью Model Validation. <br/>
+<br/>
+Вот только данные, нужные для работы API, приходят нам не только из Query или Body. Какие-то данные нужно получить из Headers (в моем случае там был json в base64), какие-то — из внешних сервисов или ActionRoute, если вы используете REST. Для получения данных оттуда можно использовать свой Binding. Правда и тут есть проблема: если вы решили не нарушать инкапсуляцию и инициализировать модель через конструктор, то придется пошаманить. <br/>
+<br/>
+Для себя и для будущих поколений я решил написать что-то вроде инструкции по использованию Binding и шаманство с ним. <br/>
+ <a href="https://habr.com/ru/post/492820/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=492820#habracut">Читать дальше &rarr;</a>]]></description>
+
+            <pubDate>Tue, 17 Mar 2020 19:17:05 GMT</pubDate>
+            <dc:creator>VolshRus</dc:creator>
+            <category><![CDATA[.NET]]></category>
+            <category><![CDATA[ASP]]></category>
+            <category><![CDATA[API]]></category>
+            <category>.net core</category>
+            <category>web api</category>
+        </item>
+
+
+        <item>
+            <title>
+                <![CDATA[[recovery mode] Опрос! Какой технический уровень должен быть у Менеджера проектов в IT?]]></title>
+            <guid isPermaLink="true">https://habr.com/ru/post/491654/</guid>
+            <link>https://habr.com/ru/post/491654/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=491654
+            </link>
+            <description><![CDATA[<div style="text-align:center;"><img src="https://habrastorage.org/webt/9b/q4/zx/9bq4zxfzrsnabargrmmfxtw-ooq.jpeg"></div><br>
+В IT переходят много специалистов из других сфер. Часто у них нет технического образования и опыта работы.<br>
+<br>
+<b>Итак, вопрос: какой технический уровень должен быть у Менеджера проектов в IT? </b><br> <a href="https://habr.com/ru/post/491654/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=491654#habracut">Читать дальше &rarr;</a>]]></description>
+
+            <pubDate>Tue, 17 Mar 2020 19:07:53 GMT</pubDate>
+            <dc:creator>VitStep</dc:creator>
+            <category><![CDATA[Управление проектами]]></category>
+            <category><![CDATA[управление проектами]]></category>
+            <category><![CDATA[подбор персонала]]></category>
+        </item>
+
+
+        <item>
+            <title>
+                <![CDATA[Какая система будет самой громкой, а какая даст «абсолютную» тишину: два любопытных научных проекта]]></title>
+            <guid isPermaLink="true">https://habr.com/ru/post/492744/</guid>
+            <link>https://habr.com/ru/post/492744/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=492744
+            </link>
+            <description><![CDATA[Группа физиков из Австралии, Сингапура и Китая разработала технологию управления квантовым состоянием фотонов в вакуумном шуме. В перспективе решение увеличит точность квантовых вычислений.<br>
+<br>
+Рассказываем, как устроена «самое тихое» система. Также поговорим о другом научном проекте — его участникам, наоборот, удалось сгенерировать самый громкий звук на планете.<br>
+<br>
+<a href="https://habr.com/ru/company/audiomania/blog/492744/"><img src="https://habrastorage.org/webt/gl/id/1w/glid1w7m9r9vzc8ch8tkoigwy_y.jpeg"></a> <a href="https://habr.com/ru/post/492744/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=492744#habracut">Читать дальше &rarr;</a>]]></description>
+
+            <pubDate>Tue, 17 Mar 2020 18:11:04 GMT</pubDate>
+            <dc:creator>Audioman</dc:creator>
+            <category><![CDATA[Блог компании Аудиомания]]></category>
+            <category><![CDATA[Научно-популярное]]></category>
+            <category><![CDATA[Звук]]></category>
+            <category><![CDATA[Квантовые технологии]]></category>
+            <category><![CDATA[аудиомания]]></category>
+            <category><![CDATA[звук]]></category>
+            <category><![CDATA[тишина]]></category>
+            <category><![CDATA[квантовые вычисления]]></category>
+            <category><![CDATA[занимательные задачки]]></category>
+            <category><![CDATA[рекорды]]></category>
+        </item>
+
+
+        <item>
+            <title><![CDATA[[COVID-19] Ваша задача — сгладить пик]]></title>
+            <guid isPermaLink="true">https://habr.com/ru/post/492810/</guid>
+            <link>https://habr.com/ru/post/492810/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=492810
+            </link>
+            <description><![CDATA[Месяц назад я обновил комплекты фильтров для полумасок. Две недели назад я покупал продукты питания долгого хранения. В это же время я начал составлять аптечку и брать необходимые мне лекарства.<br>
+<br>
+Нет, я делал это не из-за того, что собираюсь уйти на месяцы в изоляцию. Я пытаюсь сгладить нагрузку на все системы обеспечения, в условиях кооперативной игры в пандемию. И одновременно не остаться без необходимых вещей.<br>
+<br>
+Почему это важно? Об этом и поговорим.<br> <a href="https://habr.com/ru/post/492810/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=492810#habracut">Читать дальше &rarr;</a>]]></description>
+
+            <pubDate>Tue, 17 Mar 2020 17:45:08 GMT</pubDate>
+            <dc:creator>LonelyDeveloper97</dc:creator>
+            <category><![CDATA[Математика]]></category>
+            <category><![CDATA[Здоровье гика]]></category>
+            <category><![CDATA[covid-2019]]></category>
+            <category><![CDATA[дилемма заключенного]]></category>
+            <category><![CDATA[теория игр]]></category>
+        </item>
+
+
+        <item>
+            <title><![CDATA[[Перевод] Как разработчики игр подходят к вовлечению пользователей и монетизации]]></title>
+            <guid isPermaLink="true">https://habr.com/ru/post/492806/</guid>
+            <link>https://habr.com/ru/post/492806/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=492806
+            </link>
+            <description><![CDATA[<img src="https://habrastorage.org/webt/kf/19/qw/kf19qwflm4wstbqylty6lnn9cl0.png"><br>
+<br>
+Сейчас подписки есть везде: от сервисов для чтения книг или просмотра сериалов до пакетов профессионального софта и утилит. При этом проверенные и классические модели монетизации никуда не делись. <br>
+<br>
+Google в рамках своего <a href="https://eventsonair.withgoogle.com/events/googleplay" rel="nofollow">вебинара</a> рассказал о подходах к вовлечению пользователей, видах монетизации, как их связать вместе и применить на своем проекте. С примерами и данными из Google Play.<br> <a href="https://habr.com/ru/post/492806/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=492806#habracut">Читать дальше &rarr;</a>]]></description>
+
+            <pubDate>Tue, 17 Mar 2020 16:37:07 GMT</pubDate>
+            <dc:creator>Repkar</dc:creator>
+            <category><![CDATA[Блог компании Playgendary]]></category>
+            <category><![CDATA[Разработка игр]]></category>
+            <category><![CDATA[Монетизация игр]]></category>
+            <category><![CDATA[Дизайн игр]]></category>
+            <category>разработка игр</category>
+            <category>геймдев</category>
+            <category>монетизация</category>
+            <category>вовлечение</category>
+            <category>retention</category>
+        </item>
+
+
+        <item>
+            <title><![CDATA[Подкасты для разработчиков]]></title>
+            <guid isPermaLink="true">https://habr.com/ru/post/492758/</guid>
+            <link>https://habr.com/ru/post/492758/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=492758
+            </link>
+            <description><![CDATA[Интересно наблюдать за историей. Netflix, YouTube, Twitch постепенно вытеснили телевизор из нашей жизни. Сейчас похожий процесс происходит с подкастами и радио. За последние 2 года количество подкастов в мире <a href="https://www.podcastinsights.com/podcast-statistics/" rel="nofollow">выросло</a> с 525 000 до 900 000, а количество эпизодов увеличилось с 18 000 000 до 30 000 000. В России эта волна началась в прошлом году, но уже сейчас становится сложно в них ориентироваться. Мы сделали для вас подборку из 57 техноподкастов и около того.<br>
+<br>
+<img src="https://habrastorage.org/webt/d4/la/ho/d4laho0rz_swoamyzu1mqau6was.png"><br> <a href="https://habr.com/ru/post/492758/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=492758#habracut">Читать дальше &rarr;</a>]]></description>
+
+            <pubDate>Tue, 17 Mar 2020 16:28:23 GMT</pubDate>
+            <dc:creator>zverolyub</dc:creator>
+            <category><![CDATA[Блог компании Dodo Pizza Engineering]]></category>
+            <category><![CDATA[Социальные сети и сообщества]]></category>
+            <category><![CDATA[Лайфхаки для гиков]]></category>
+            <category><![CDATA[Звук]]></category>
+            <category><![CDATA[dodo is]]></category>
+            <category><![CDATA[dodo pizza engineering]]></category>
+            <category><![CDATA[podcast]]></category>
+            <category><![CDATA[технические подкасты]]></category>
+            <category><![CDATA[подкасты для разработчиков]]></category>
+        </item>
+
+
+        <item>
+            <title>
+                <![CDATA[О вопросе репликации социальной активности в интернете как ключе к минимизации роста заболеваемости во время пандемии]]></title>
+            <guid isPermaLink="true">https://habr.com/ru/post/492804/</guid>
+            <link>https://habr.com/ru/post/492804/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=492804
+            </link>
+            <description><![CDATA[Я не сторонник антропоморфизма — перенесения человеческого образа и его свойств на неодушевлённые предметы, животных, растения, природные явления, сверхъестественных существ, абстрактные понятия и др. <br>
+<br>
+Но когда существует проблематика, подобной этой, возникает просто желание воспользоваться этим терминологическим и публицистическим приемом. Проблематика, поднятая в моем вопросе, так или иначе, связана с происходящем в последнее время. Еще не отгремело и половины выстрелов всепоглощающей коронавирусной инфодемии. И рано делать многозначительные сложные выводы. Но простите меня, а куда мы все смотрели? Мы — последователи Бэббиджа и Тьюринга? Невольное олицетворение того, что в основном и определяет сущность наших рабочих, научных интересов. <br> <a href="https://habr.com/ru/post/492804/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=492804#habracut">Читать дальше &rarr;</a>]]></description>
+
+            <pubDate>Tue, 17 Mar 2020 16:16:24 GMT</pubDate>
+            <dc:creator>Munister_V</dc:creator>
+            <category><![CDATA[Исследования и прогнозы в IT]]></category>
+            <category><![CDATA[Социальные сети и сообщества]]></category>
+            <category><![CDATA[Сотовая связь]]></category>
+            <category><![CDATA[коронавирус]]></category>
+            <category><![CDATA[дискретная модель]]></category>
+            <category><![CDATA[волонтёрство]]></category>
+            <category><![CDATA[графы и визуализация]]></category>
+        </item>
+
+
+        <item>
+            <title><![CDATA[Как я впервые стримил университетскую лекцию]]></title>
+            <guid isPermaLink="true">https://habr.com/ru/post/492662/</guid>
+            <link>https://habr.com/ru/post/492662/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=492662
+            </link>
+            <description><![CDATA[<p>Коронавирус вносит свои коррективы в студенческую жизнь, но, пока ВУЗы решают, что им делать и как переходить на дистанционное обучение, прогрессивная часть преподавательского корпуса должна брать ситуацию в свои руки. Вот я и решил, что не буду ждать, пока мой alma mater придумает, как быть, а решил мгновенно перевести лекции в дистанционный режим.</p><br>
+<p>Сегодня было первое занятие и оно прошло пристойно. Сейчас расскажу, как я это сделал.</p><br>
+<p><em>TLDR: Вполне хватает связки ноутбук + планшет с пером + Zoom. Но есть нюансы.</em></p><br>
+<p><img src="https://habrastorage.org/webt/4b/rs/gz/4brsgziow_weexnemu4nr5d_j7c.png"></p> <a href="https://habr.com/ru/post/492662/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=492662#habracut">Читать дальше &rarr;</a>]]></description>
+
+            <pubDate>Tue, 17 Mar 2020 16:06:08 GMT</pubDate>
+            <dc:creator>ashagraev</dc:creator>
+            <category><![CDATA[Учебный процесс в IT]]></category>
+            <category><![CDATA[Презентации]]></category>
+            <category><![CDATA[дистанционное образование]]></category>
+            <category><![CDATA[образование]]></category>
+            <category><![CDATA[zoom]]></category>
+        </item>
+
+
+        <item>
+            <title><![CDATA[[Из песочницы] GSM IoT-провайдер в ЖКХ (Часть 1)]]></title>
+            <guid isPermaLink="true">https://habr.com/ru/post/492800/</guid>
+            <link>https://habr.com/ru/post/492800/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=492800
+            </link>
+            <description><![CDATA[Прочитал статьи автора <a href="https://habr.com/ru/users/interfer/" class="user_link">Interfer</a> о трудностях в Iot и решил рассказать о своём опыте IoT-провайдера. <br/>
+<br/>
+Статья первая не рекламная, большая часть материала без моделей оборудования. Постараюсь написать детали в следующих статьях.<br/>
+<br/>
+Не вижу проблем применения GSM модемов для сбора данных с приборов учёта т.к принимал участие в создании системы сбора с 795-и жилых домов, периодичность опроса каждый час, стабильность подтвердилась тремя годами эксплуатации.<br/>
+<br/>
+География рабочей lot сети сейчас насчитывает более 5000 точек сбора по России.<br/>
+<br/>
+<h4>Сложности </h4> <a href="https://habr.com/ru/post/492800/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=492800#habracut">Читать дальше &rarr;</a>]]></description>
+
+            <pubDate>Tue, 17 Mar 2020 15:41:50 GMT</pubDate>
+            <dc:creator>serg52</dc:creator>
+            <category><![CDATA[Беспроводные технологии]]></category>
+            <category><![CDATA[Интернет вещей]]></category>
+            <category><![CDATA[Сотовая связь]]></category>
+            <category>iot</category>
+            <category>сбор данных</category>
+            <category>учет</category>
+            <category>gprs</category>
+        </item>
+
+
+        <item>
+            <title><![CDATA[[recovery mode] Надоело, но: первую волну COVID-19 Германия полностью остановила]]></title>
+            <guid isPermaLink="true">https://habr.com/ru/post/492788/</guid>
+            <link>https://habr.com/ru/post/492788/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=492788
+            </link>
+            <description><![CDATA[<img src="https://habrastorage.org/webt/vc/cn/cx/vccncxynmbkagcluumphn7zpgtq.jpeg"><br>
+<br>
+Пару дней назад осознал, что подавляющее большинство общественности просто не понимает сути и целей карантинных мероприятий. Ни полного карантина, ни его ступенчатых реализаций.<br>
+<br>
+А ведь Германия (<i>по факту — только Бавария и по сути — только южная часть Мюнхена и его пригород)</i> на самом-то деле первую волну коронавируса, завезённую из Китая, полностью изолировала и увела в ноль.<br>
+<br>
+Заболели только 16 человек. <br>
+<br>
+Из них 14 — через центральный офис автопоставщика Webasto где носителем оказалась коллега-китаянка, приезжавшая с 19 по 25 февраля на обсуждение проектов. И 2 человека — среди эвакуированных из Ухани и потом находившихся на карантине.<br>
+<br>
+И все выздоровели.<br> <a href="https://habr.com/ru/post/492788/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=492788#habracut">Читать дальше &rarr;</a>]]></description>
+
+            <pubDate>Tue, 17 Mar 2020 15:00:09 GMT</pubDate>
+            <dc:creator>kababok</dc:creator>
+            <category><![CDATA[Здоровье гика]]></category>
+            <category><![CDATA[COVID-19]]></category>
+            <category><![CDATA[Bayern]]></category>
+            <category><![CDATA[Германия]]></category>
+            <category><![CDATA[Бавария]]></category>
+            <category><![CDATA[карантин]]></category>
+            <category><![CDATA[эпидемиология]]></category>
+            <category><![CDATA[человеческий фактор]]></category>
+            <category><![CDATA[пиво не закончится]]></category>
+        </item>
+
+
+        <item>
+            <title>
+                <![CDATA[[Перевод] Создание масштабируемой и отказоустойчивой архитектуры с помощью динамических микросервисов]]></title>
+            <guid isPermaLink="true">https://habr.com/ru/post/492642/</guid>
+            <link>https://habr.com/ru/post/492642/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=492642
+            </link>
+            <description><![CDATA[<b><i>И снова здравствуйте. Как вы знаете, в марте OTUS запускает абсолютно новый курс <a href="https://otus.pw/0SRbR/" rel="nofollow">«Архитектура и шаблоны проектирования»</a>. В преддверии старта курса перевели для вас большой материал про Создание масштабируемой и отказоустойчивой архитектуры с помощью динамических микросервисов. Приятного прочтения!</i></b><br>
+<br>
+<hr><br>
+<h3>Аннотация</h3><br>
+Одна из наиболее важных тенденций в области производственной архитектуры связана с использованием микросервисов в ущерб монолитным архитектурам, которые теряют популярность. Благодаря облачной архитектуре развертывание микросервисных систем является более продуктивным, гибким и экономически эффективным. Как бы то ни было, многие компании уже начали переходить с одного типа архитектуры на другой, но это все еще только в зачатке. В этой статье мы решаем проблемы, возникающие в связи с необходимостью разработки масштабируемой и отказоустойчивой системы на основе микросервисов. В наших экспериментах мы рассматриваем два типа микросервисов, простые и расширенные, и показываем, что предлагаемое решение является инновационным на основе его динамического поведения. <a href="https://habr.com/ru/post/492642/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=492642#habracut">Читать дальше &rarr;</a>]]></description>
+
+            <pubDate>Tue, 17 Mar 2020 14:36:31 GMT</pubDate>
+            <dc:creator>MaxRokatansky</dc:creator>
+            <category><![CDATA[Блог компании OTUS. Онлайн-образование]]></category>
+            <category><![CDATA[Анализ и проектирование систем]]></category>
+            <category><![CDATA[Проектирование и рефакторинг]]></category>
+            <category><![CDATA[Исследования и прогнозы в IT]]></category>
+            <category><![CDATA[Микросервисы]]></category>
+            <category>микросервисы</category>
+            <category>архитектура</category>
+            <category>отказоустойчивость</category>
+        </item>
+
+
+        <item>
+            <title><![CDATA[DMCA — соблюдать нельзя игнорировать]]></title>
+            <guid isPermaLink="true">https://habr.com/ru/post/492784/</guid>
+            <link>https://habr.com/ru/post/492784/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=492784
+            </link>
+            <description><![CDATA[<img src="https://habrastorage.org/webt/ok/cv/x9/okcvx9loebsqsahs2j5peck5dc8.jpeg"><br>
+<font color="99999999"><sup>* заголовок обыгрывает фразу «Казнить нельзя помиловать»</sup></font><br>
+<br>
+Если вы размещаете на своих серверах какой-либо медиа-контент, вы наверняка сталкивались с DMCA-жалобами (в просторечии «абузами»). DMCA — это такой американский закон, на который ссылаются правообладатели, требующие удалить контент, заблокировать или отдать доменное имя, не использовать логотипы, торговые марки и т.д. <br>
+Если закон действует только в США, нужно ли выполнять эти требования находясь в России или можно игнорировать? Часто хостинг-провайдеры заставляют своих клиентов выполнять требования правообладателей, даже если в их юрисдикции не действует DMCA. <br>
+<br>
+В статье мы разберем, что такое DMCA, в каких случаях его нужно соблюдать, а когда можно не обращать внимания. Расскажем, как <a href="https://vdsina.ru/?partner=habr3" rel="nofollow">VDSina</a> поступает с таким жалобами. А также: как работают автоматические генераторы жалоб, и как следить за нарушителями на своем сервере, если приходится соблюдать DMCA. <br> <a href="https://habr.com/ru/post/492784/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=492784#habracut">Читать дальше &rarr;</a>]]></description>
+
+            <pubDate>Tue, 17 Mar 2020 14:23:06 GMT</pubDate>
+            <dc:creator>vdsina_m</dc:creator>
+            <category><![CDATA[Блог компании Хостинг-технологии]]></category>
+            <category><![CDATA[Хостинг]]></category>
+            <category><![CDATA[Законодательство в IT]]></category>
+            <category><![CDATA[Копирайт]]></category>
+            <category><![CDATA[dmca]]></category>
+            <category><![CDATA[копирайт]]></category>
+            <category><![CDATA[copyright]]></category>
+            <category><![CDATA[абузы]]></category>
+            <category><![CDATA[abuse]]></category>
+            <category><![CDATA[правообладатели]]></category>
+            <category><![CDATA[ip echelon]]></category>
+            <category><![CDATA[ipechelon]]></category>
+        </item>
+
+
+        <item>
+            <title><![CDATA[Как избежать программистского беспредела? Советы интегратора]]></title>
+            <guid isPermaLink="true">https://habr.com/ru/post/492746/</guid>
+            <link>https://habr.com/ru/post/492746/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=492746
+            </link>
+            <description><![CDATA[В <a href="https://habr.com/ru/company/icl_services/blog/443398/">предыдущей статье</a> о проблемах внедрения ERP на промышленных предприятиях в качестве кейса к одному из пунктов был приведён «Программистский беспредел».<br>
+<br>
+У нас есть заказчик, сотрудники которого теперь, отправляя нам сомнительные требования, уточняют, не является ли это программистским беспределом. А некоторые не уточняют, а творят его.<br>
+<br>
+<div style="text-align:center;"><img src="https://habrastorage.org/webt/l4/vy/xg/l4vyxg2c8yrfedtd6nwzn_m4cua.jpeg" alt="image"></div><br>
+Тема это актуальная, и я решил написать о ней отдельную статью. <a href="https://habr.com/ru/post/492746/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=492746#habracut">Читать дальше &rarr;</a>]]></description>
+
+            <pubDate>Tue, 17 Mar 2020 14:13:57 GMT</pubDate>
+            <dc:creator>Koyashkai</dc:creator>
+            <category><![CDATA[Блог компании ICL Services]]></category>
+            <category><![CDATA[IT-инфраструктура]]></category>
+            <category><![CDATA[ERP-системы]]></category>
+            <category><![CDATA[Управление проектами]]></category>
+            <category><![CDATA[IT-компании]]></category>
+            <category><![CDATA[ERP]]></category>
+            <category><![CDATA[программирование]]></category>
+            <category><![CDATA[разработка]]></category>
+        </item>
+
+
+        <item>
+            <title>
+                <![CDATA[Обучение, переговоры, консультации удалённо — бесплатное решение видеоконференцсвязи Mind Server]]></title>
+            <guid isPermaLink="true">https://habr.com/ru/post/492770/</guid>
+            <link>https://habr.com/ru/post/492770/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=492770
+            </link>
+            <description><![CDATA[<img src="https://habrastorage.org/webt/f_/j4/iy/f_j4iyzer4ct2bvbdyqunqlja8e.png" align="left">В качестве вступления — приглашаю всех причастных в хаб <a href="https://habr.com/ru/hub/video_conferencing/"><b>Видеоконференцсвязь</b></a> — в ближайшее время, полагаю, здесь будет публиковаться много интересных статей.<br>
+<br>
+В свете последних событий многие компании, причастные к отрасли видеоконференцсвязи, начали бурную рекламную компанию своих продуктов и решений. И выглядит это, порой, не очень красиво: «Только на период пандемии — бесплатно пользуйтесь нашим сервисом...» Всё бы ничего, только такие компании искусственно создают ажиотаж, так как предлагают к эксклюзивному использованию и без того бесплатные версии своих продуктов. Не виню — время такое, лишь бы с пользой для народа.<br>
+<br>
+Как только я услышал о карантине и увидел всевозможные акции бесплатных сервисов, я сразу обратился к своим давним парнёрам — одному из ведущих разработчиков ПО для ВКС в России, компании Майнд. Я решил, что подобная маркетинговая активность им не помешает, но получив отказ был немного обескуражен. Оказалось, что за последние дни нагрузка на облачный сервис Майнд выросла настолько, что вычислительных ресурсов перестало хватать на обработку огромного количества подключений. И это без всякой рекламы, поэтому рекомендовать облачные решения в этой статье я не буду.<br>
+<br>
+В этой статье я напомню о скромном факте — особенности локального решения для видеоконференцсвязи Mind Server, о котором я уже рассказывал в прошлых статьях:<br>
+<a href="https://habr.com/ru/company/stss/blog/465935/"><b>Профессиональная ВКС доступна как никогда. Mind Server — новая версия, новые цены</b></a><br>
+<a href="https://habr.com/ru/company/stss/blog/277013/"><b>Видеоконференцсвязь Mind — оптимальный выбор для бизнеса</b></a><br>
+Речь идёт о бессрочной возможности пользоваться On-Premise версией Mind Server в закрытой сети совершенно бесплатно.<br> <a href="https://habr.com/ru/post/492770/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=492770#habracut">Ставим бесплатный сервер ВКС и не боимся карантина!</a>]]></description>
+
+            <pubDate>Tue, 17 Mar 2020 14:11:03 GMT</pubDate>
+            <dc:creator>Usikoff</dc:creator>
+            <category><![CDATA[Блог компании STSS]]></category>
+            <category><![CDATA[Конференции]]></category>
+            <category><![CDATA[Софт]]></category>
+            <category><![CDATA[Здоровье гика]]></category>
+            <category><![CDATA[Видеоконференцсвязь]]></category>
+            <category><![CDATA[MIND]]></category>
+            <category><![CDATA[ВКС]]></category>
+            <category><![CDATA[конференция]]></category>
+            <category><![CDATA[видеоконференции]]></category>
+            <category><![CDATA[видеоконференцсвязь]]></category>
+            <category><![CDATA[коронавирус]]></category>
+            <category><![CDATA[карантин]]></category>
+            <category><![CDATA[удаленная работа]]></category>
+            <category><![CDATA[обучение]]></category>
+            <category><![CDATA[вебинар]]></category>
+            <category><![CDATA[лекция]]></category>
+            <category><![CDATA[селектор]]></category>
+            <category><![CDATA[STSS]]></category>
+            <category><![CDATA[Vinteo]]></category>
+            <category><![CDATA[Yealink]]></category>
+            <category><![CDATA[ProfAV]]></category>
+            <category><![CDATA[Prof-AV]]></category>
+            <category><![CDATA[бесплатно]]></category>
+            <category><![CDATA[бессрочно]]></category>
+            <category><![CDATA[лицензия]]></category>
+            <category><![CDATA[сервер]]></category>
+            <category><![CDATA[mcu]]></category>
+        </item>
+
+
+        <item>
+            <title><![CDATA[Grafana, InfluxDB, два тега и одна сумма. Или как посчитать сумму подгрупп?]]></title>
+            <guid isPermaLink="true">https://habr.com/ru/post/490764/</guid>
+            <link>https://habr.com/ru/post/490764/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=490764
+            </link>
+            <description><![CDATA[<a href="https://habr.com/ru/company/raiffeisenbank/blog/490764/"><img src="https://habrastorage.org/webt/ol/b6/9a/olb69a8cdqhqtmjf-ic8x8qjevi.png"></a><br>
+Всем привет!<br>
+<br>
+Занимаюсь тестированием производительности. И очень люблю настраивать мониторинг и любоваться метриками в <a href="https://grafana.com/" rel="nofollow">Grafana</a>. А стандартом для хранения метрик в инструментах для подачи нагрузки является <a href="https://www.influxdata.com/products/influxdb-overview/" rel="nofollow">InfluxDB</a>. В <b>InfluxDB</b> можно сохранять метрики из таких популярных инструментов, как:<br>
+<br>
+<ul>
+<li><a href="https://jmeter.apache.org/usermanual/realtime-results.html" title="Раздел документации Apache.JMeter
+Real-time results
+
+In this document we will present the configuration setup to graph and historize the data in different backends:
+
+ • InfluxDB setup for InfluxDBBackendListenerClient
+ • InfluxDB setup for GraphiteBackendListenerClient
+ • Grafana
+ • Graphite" rel="nofollow">Apache.JMeter</a></li>
+<li><a href="https://gatling.io/docs/current/realtime_monitoring#graphite-influxdb-grafana" title="Раздел документации Gatling
+Realtime monitoring
+
+The sections below describe how to configure Gatling with InfluxDB and Graphite, and use Grafana as a graphing library" rel="nofollow">Gatling</a></li>
+<li><a href="https://admhelp.microfocus.com/pc/en/2020/online_help/Content/PC/Analysis-Servers.htm" title="Раздел документации LoadRunner Enterprise
+Manage analysis servers
+
+This section describes how to configure external analysis database servers to be used with LoadRunner Enterprise" rel="nofollow">LoadRunner Enterprise</a></li>
+<li><a href="https://yandextank.readthedocs.io/en/latest/core_and_modules.html#influxdb" title="Раздел документации Yandex.Tank
+Modules / Artifact uploaders / InfluxDB
+
+В которой описана возможность сохранения метрик Yandex.Tank в InfluxDB" rel="nofollow">Yandex.Tank</a></li>
+</ul><br>
+Работая с инструментами по тестированию производительности и их метриками, накопил подборку рецептов программирования для связки <b>Grafana</b> и <b>InfluxDB</b>. Предлагаю рассмотреть интересную задачу, которая возникает там, где есть метрика с двумя и более тегами. Думаю, это не редкость. И в общем случае задача звучит так: <b>подсчёт суммарной метрики по группе, которая делится на подгруппы</b>.<br> <a href="https://habr.com/ru/post/490764/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=490764#habracut">Посчитаем тремя способами</a>]]></description>
+
+            <pubDate>Tue, 17 Mar 2020 14:08:24 GMT</pubDate>
+            <dc:creator>polarnik</dc:creator>
+            <category><![CDATA[Блог компании Райффайзенбанк]]></category>
+            <category><![CDATA[Высокая производительность]]></category>
+            <category><![CDATA[Ненормальное программирование]]></category>
+            <category><![CDATA[Тестирование IT-систем]]></category>
+            <category><![CDATA[Визуализация данных]]></category>
+            <category><![CDATA[grafana]]></category>
+            <category><![CDATA[influxdb]]></category>
+            <category><![CDATA[telegraf]]></category>
+            <category><![CDATA[jolokia]]></category>
+            <category><![CDATA[raiffeisenbank]]></category>
+            <category><![CDATA[raiffeisendgtl]]></category>
+        </item>
+
+
+        <item>
+            <title>
+                <![CDATA[«Разрабатывая что-то заранее и полностью спроектированное, ты делаешь мертворожденную штуку» — разговор с The Breakfast]]></title>
+            <guid isPermaLink="true">https://habr.com/ru/post/492774/</guid>
+            <link>https://habr.com/ru/post/492774/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=492774
+            </link>
+            <description><![CDATA[<img src="https://habrastorage.org/getpro/habr/post_images/bc3/c86/120/bc3c8612048d26cd81c83f8216d65dbd.jpg" alt="image"><br>
+<br>
+В условиях пандемии коронавируса, карантинов, закрытых границ и самоизоляций, все в первую очередь хоронят олдскульный бизнес. Как выживать турфирмам, кинотеатрам и ресторанам, если все сидят дома. Цифровой бизнес наоборот потирает руки и борется за внимание засевших дома потребителей.<br>
+<br>
+Но в ИТ может сильно пострадать еще совсем не окрепшая и только о себе заявившая отрасль — сервисы для оффлайновых встреч с незнакомыми людьми. Еще до объявления COVID-19 пандемией и до введения ЧС во многих странах мы поговорили с Елизаветой Орешкиной. Она вместе с Этери Санеблидзе делает приложение <a href="https://thebreakfast.app/" rel="nofollow">The Breakfast</a>, которое сводит незнакомцев для совместных завтраков и напоминает закрытый клуб только для своих. <br>
+<br>
+Мы с Иваном Звягиным (<a href="https://habr.com/ru/users/baragol/" class="user_link">baragol</a>) обсудили, почему люди вдруг снова захотели общаться в оффлайне, и как в современном мире делать стартап, который не гонится за массовой аудиторией и огромными цифрами.<br> <a href="https://habr.com/ru/post/492774/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=492774#habracut">Читать дальше &rarr;</a>]]></description>
+
+            <pubDate>Tue, 17 Mar 2020 14:03:02 GMT</pubDate>
+            <dc:creator>arttom</dc:creator>
+            <category><![CDATA[Дизайн мобильных приложений]]></category>
+            <category><![CDATA[Управление сообществом]]></category>
+            <category><![CDATA[Развитие стартапа]]></category>
+            <category><![CDATA[Бизнес-модели]]></category>
+            <category><![CDATA[The Breakfast]]></category>
+            <category><![CDATA[как развивать стартап]]></category>
+        </item>
+
+
+        <item>
+            <title>
+                <![CDATA[Сервисы, которые стали бесплатными на время карантина: курсы, радио, книги, кино и сериалы]]></title>
+            <guid isPermaLink="true">https://habr.com/ru/post/492776/</guid>
+            <link>https://habr.com/ru/post/492776/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=492776
+            </link>
+            <description><![CDATA[<img src="https://habrastorage.org/webt/le/p3/vh/lep3vh-jrqdkctnprkzdwee9xw4.png" alt="image"><br>
+<br>
+Кажется, на ближайший месяц почти все мы более или менее на карантине — сидим дома в самоизоляции. Грустно, конечно, но есть и плюсы. Не нужно тратить время на дорогу в офис и обратно, а сэкономленное время можно потратить на обучение, например. Ну или сериал посмотреть, который давно хотелось. Хорошие ребята вроде bang bang и GeekBrains на месяц открывают бесплатный доступ к своим материалам. А мы будем собирать здесь ссылки на такие аттракционы неслыханной щедрости. <a href="https://habr.com/ru/post/492776/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=492776#habracut">Читать дальше &rarr;</a>]]></description>
+
+            <pubDate>Tue, 17 Mar 2020 13:56:11 GMT</pubDate>
+            <dc:creator>baragol</dc:creator>
+            <category><![CDATA[Блог компании Хабр]]></category>
+            <category><![CDATA[Учебный процесс в IT]]></category>
+            <category><![CDATA[коронавирус]]></category>
+            <category><![CDATA[covid-19]]></category>
+            <category><![CDATA[карантин]]></category>
+            <category><![CDATA[обучение]]></category>
+            <category><![CDATA[самоизоляция]]></category>
+            <category><![CDATA[бесплатно]]></category>
+        </item>
+
+
+    </channel>
+</rss>

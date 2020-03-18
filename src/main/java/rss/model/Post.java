@@ -18,6 +18,10 @@ public class Post {
     @JoinColumn
     private Channel channel;
 
+    @ManyToOne
+    @JoinColumn
+    private Feed feed;
+
     @Column
     private String title;
 

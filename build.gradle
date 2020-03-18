@@ -15,6 +15,8 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
+    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.6.0'
 
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-web'
@@ -22,4 +24,6 @@ dependencies {
 
     compile group: 'org.hibernate', name: 'hibernate-core', version: '5.2.16.Final'
     compile group: 'postgresql', name: 'postgresql', version: '9.1-901-1.jdbc4'
+
+    compile group: 'org.jsoup', name: 'jsoup', version: '1.7.2'
 }

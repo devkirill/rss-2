@@ -2,7 +2,6 @@ package rss.model.channel;
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
-import java.util.Date;
 
 @Embeddable
 public class Template {
@@ -19,7 +18,7 @@ public class Template {
     private String illustration;
 
     @Column
-    private Date posted;
+    private String posted;
 
     @Column
     private String author;
@@ -61,11 +60,11 @@ public class Template {
         this.illustration = illustration;
     }
 
-    public Date getPosted() {
+    public String getPosted() {
         return posted;
     }
 
-    public void setPosted(Date posted) {
+    public void setPosted(String posted) {
         this.posted = posted;
     }
 

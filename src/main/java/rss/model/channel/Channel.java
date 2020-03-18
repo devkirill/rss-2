@@ -1,6 +1,10 @@
 package rss.model.channel;
 
+import rss.model.Post;
+
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "channel")
@@ -13,14 +17,17 @@ public class Channel {
     @GeneratedValue(generator = GENERATOR)
     private int id;
 
-    @Column//(columnDefinition = "'FALSE'")
+    @Column
     private boolean make;
+
+    @Column
+    private String url;
 
     @Embedded
     private Template template;
 
-//    @OneToMany(mappedBy = "channel")
-//    private List<Post> posts = new ArrayList<>();
+    @OneToMany(mappedBy = "channel")
+    private List<Post> posts = new ArrayList<>();
 
     //region getters and setters
 
@@ -38,6 +45,14 @@ public class Channel {
 
     public void setMake(boolean make) {
         this.make = make;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 
     public Template getTemplate() {
