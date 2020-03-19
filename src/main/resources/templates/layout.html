@@ -1,0 +1,37 @@
+<head xmlns:th="http://www.w3.org/1999/xhtml">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title th:search="${title} ?: 'RSS'"></title>
+    <link th:href="@{/assets/css/bootstrap.min.css}" rel="stylesheet" media="screen"/>
+    <link th:href="@{/style.css}" rel="stylesheet" media="screen"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4" xmlns:th="http://www.w3.org/1999/xhtml">
+    <div class="container">
+        <a class="navbar-brand" href="/">RSS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li th:classappend="${#httpServletRequest.getRequestURI() == '/channel/' ? 'active' : ''}"
+                    class="nav-item">
+                    <a class="nav-link" href="/channel/">Каналы</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0" th:action="@{/}">
+                <input class="form-control mr-sm-2" type="search" name="search" placeholder="Поиск" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0 sr-only" type="submit">Поиск</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"
+        integrity="sha384-FzT3vTVGXqf7wRfy8k4BiyzvbNfeYjK+frTVqZeNDFl8woCbF0CYG6g2fMEFFo/i"
+        crossorigin="anonymous"></script>
+<script th:src="@{/assets/js/popper.min.js}"></script>
+<script th:src="@{/assets/js/bootstrap.min.js}"></script>
+<script th:src="@{/scripts.js}"></script>

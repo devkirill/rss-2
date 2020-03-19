@@ -61,9 +61,15 @@ public class Harverster {
                                 "FROM Post " +
                                 "WHERE " +
                                 "   guid = :guid OR " +
-                                "   link = :link", Long.class)
+                                "   link = :link OR " +
+                                "   ( " +
+                                "       title = :title AND" +
+                                "       description = :description " +
+                                "   ) ", Long.class)
                         .setParameter("guid", post.getGuid())
                         .setParameter("link", post.getLink())
+                        .setParameter("title", post.getTitle())
+                        .setParameter("description", post.getDescription())
                         .getSingleResult() == 0)
                 .collect(Collectors.toList());
 

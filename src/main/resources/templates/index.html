@@ -1,0 +1,53 @@
+<!doctype html>
+<html xmlns:th="http://www.w3.org/1999/xhtml" lang="en">
+<head th:replace="layout :: head"></head>
+<body>
+
+<nav th:replace="layout :: nav"></nav>
+
+<main role="main" class="container" th:object="${model}">
+    <div class="card mb-3 post-card" th:each="post : *{posts}">
+        <div class="card-body" th:object="${post}">
+            <h5 class="card-title">
+                <a th:href="*{link}" th:text="*{title}">title</a>
+            </h5>
+            <h6 class="card-subtitle mb-2 search-muted" th:if="*{pubDate} != null" th:text="${post.pubDate}">date</h6>
+
+            <div th:utext="*{description}"></div>
+        </div>
+    </div>
+    <div th:object="${query}" th:remove="tag">
+        <ul class="pagination justify-content-center" th:with="params = @{/(search=*{search},size=*{size})}, maxPage = ${(model.totalCount + query.size - 1) / query.size}">
+            <li class="page-item" th:classappend="*{page} > 1 ? '' : disabled" th:with="page = *{page} - 1">
+                <a class="page-link" href="#" th:href="@{${params}(page=${page})}">Предыдущая</a>
+            </li>
+
+            <div th:each="i : ${ {4, 3, 2, 1} }" th:remove="tag">
+                <li class="page-item" th:if="*{page} > ${i}" th:with="page = *{page} - ${i}">
+                    <a class="page-link" href="#" th:href="@{${params}(page=${page})}" th:text="${page}">?</a>
+                </li>
+            </div>
+
+            <li class="page-item active"><a class="page-link" href="#" th:text="*{page}">?</a></li>
+
+            <div th:remove="tag">
+
+                <div th:each="i : ${ {1, 2, 3, 4} }" th:remove="tag">
+                    <li class="page-item" th:with="page = *{page} + ${i}" th:if="*{page} + ${i} <= ${maxPage}">
+                        <a class="page-link" href="#" th:href="@{${params}(page=${page})}" th:text="${page}">?</a>
+                    </li>
+                </div>
+
+                <li class="page-item" th:classappend="*{page} < ${maxPage} ? '' : disabled" th:with="page=*{page} + 1">
+                    <a class="page-link" href="#" th:href="@{${params}(page=${page})}">Следующая</a>
+                </li>
+
+            </div>
+        </ul>
+    </div>
+</main>
+
+<script th:replace="layout :: script"></script>
+
+</body>
+</html>
