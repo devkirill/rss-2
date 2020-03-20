@@ -1,11 +1,11 @@
 package rss.service;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import rss.utils.StreamUtil;
 
 import java.io.InputStream;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class DataRecieverTest {
     private DataReciever dataReciever = new DataReciever();

@@ -4,6 +4,7 @@ import org.hibernate.annotations.GenericGenerator;
 import rss.model.channel.Channel;
 
 import javax.persistence.*;
+import java.time.ZonedDateTime;
 
 @Entity
 @Table(name = "post")
@@ -32,7 +33,10 @@ public class Post {
     private String img;
 
     @Column
-    private String pubDate;
+    private ZonedDateTime pubDate;
+
+    @Column
+    private String rawPubDate;
 
     @Column(columnDefinition = "TEXT")
     private String author;
@@ -90,12 +94,20 @@ public class Post {
         this.img = img;
     }
 
-    public String getPubDate() {
+    public ZonedDateTime getPubDate() {
         return pubDate;
     }
 
-    public void setPubDate(String pubDate) {
+    public void setPubDate(ZonedDateTime pubDate) {
         this.pubDate = pubDate;
+    }
+
+    public String getRawPubDate() {
+        return rawPubDate;
+    }
+
+    public void setRawPubDate(String rawPubDate) {
+        this.rawPubDate = rawPubDate;
     }
 
     public String getAuthor() {

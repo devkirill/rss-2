@@ -7,6 +7,7 @@ import org.w3c.dom.NodeList;
 import rss.model.Feed;
 import rss.model.Post;
 import rss.model.channel.Template;
+import rss.utils.DateUtil;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -52,7 +53,9 @@ public class XPathParser {
         post.setTitle(getValue(node, template.getHeadline()));
         post.setDescription(getValue(node, template.getSummary()));
         post.setAuthor(getValue(node, template.getAuthor()));
-        post.setPubDate(getValue(node, template.getPosted()));
+        String rawDate = getValue(node, template.getPosted());
+        post.setRawPubDate(rawDate);
+        post.setPubDate(DateUtil.parse(rawDate));
 
         return post;
     }
