@@ -7,9 +7,10 @@ import org.springframework.stereotype.Service;
 import rss.model.Feed;
 import rss.model.Post;
 import rss.model.channel.Channel;
-import rss.service.parser.XPathParser;
+import rss.service.parser.PostLoader;
 
 import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -18,12 +19,11 @@ import java.util.stream.Collectors;
 @Transactional
 @EnableScheduling
 public class Harverster {
-    @Autowired
+    @PersistenceContext
     private EntityManager entityManager;
 
-    private XPathParser parser = new XPathParser();
-
-    private DataReciever dataReciever = new DataReciever();
+    @Autowired
+    private PostLoader parser;
 
     @Scheduled(initialDelay = 0, fixedRate = 60 * 1000)
     public void update() {
@@ -34,7 +34,7 @@ public class Harverster {
                 .getResultList();
 
         channels.forEach(channel -> {
-            Feed feed = parser.parseFeed(dataReciever.getContent(channel.getUrl()), channel.getTemplate());
+            Feed feed = parser.getFeed(channel);
 
             removeExisted(feed);
 

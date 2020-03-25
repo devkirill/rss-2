@@ -16,6 +16,11 @@ public class MainController {
     @Autowired
     private SearchPostService postService;
 
+    /**
+     * Просмотр карточек с новостями
+     * @param query запрос поиска постов (строка запроса, страница)
+     * @return найденные посты
+     */
     @GetMapping(path = "/")
     public ModelAndView index(@ModelAttribute("query") SearchQuery query) {
         SearchResult result = postService.searchString(query);

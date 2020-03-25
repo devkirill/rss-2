@@ -12,7 +12,7 @@ import java.time.ZonedDateTime;
 public class Post {
     @Id
     @Column(updatable = false, nullable = false)
-    @GeneratedValue(generator = "UUID")
+//    @GeneratedValue(generator = "UUID", strategy = GenerationType.IDENTITY)
     private String guid;
 
     @ManyToOne

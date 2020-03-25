@@ -1,0 +1,94 @@
+<div xmlns:th="http://www.w3.org/1999/xhtml" th:object="${channel}">
+    <input type="hidden" name="id" th:if="*{id != null}" th:value="*{id}">
+    <div class="modal-header">
+        <h5 class="modal-title" th:text="*{id == null} ? 'Добавление нового ресурса' : 'Изменение ресурса'"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="form-group">
+            <label for="url" class="col-form-label">URL</label>
+            <input id="url" type="search" class="form-control" name="url" data-editor-for="url" th:value="*{url}">
+            <div class="invalid-feedback" data-errors-for="url"></div>
+        </div>
+        <div class="form-group">
+            <div class="list-group">
+                <div class="list-group-item" th:object="${channel.template}">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5>Настройка шаблона</h5>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="root" class="col-form-label">Путь до поста</label>
+                            <input id="root" type="text" class="form-control" name="template.root" th:value="*{root}" value="">
+                            <!--<div class="invalid-feedback" data-errors-for="url"></div>-->
+                        </div>
+                        <div>
+                            <label for="guid" class="col-form-label">Уникальный идентификатор поста</label>
+                            <input id="guid" type="text" class="form-control" name="template.guid" th:value="*{guid}" value="">
+                        </div>
+                        <div>
+                            <label for="title" class="col-form-label">Заголовок</label>
+                            <input id="title" type="text" class="form-control" name="template.title" th:value="*{title}" value="">
+                        </div>
+                        <div>
+                            <label for="description" class="col-form-label">Описание</label>
+                            <input id="description" type="text" class="form-control" name="template.description" th:value="*{description}" value="">
+                        </div>
+                        <div>
+                            <label for="pubDate" class="col-form-label">Дата публикации</label>
+                            <input id="pubDate" type="text" class="form-control" name="template.pubDate" th:value="*{pubDate}" value="">
+                        </div>
+                        <div>
+                            <label for="author" class="col-form-label">Автор</label>
+                            <input id="author" type="text" class="form-control" name="template.author" th:value="*{author}" value="">
+                        </div>
+                        <div>
+                            <label for="link" class="col-form-label">Ссылка</label>
+                            <input id="link" type="text" class="form-control" name="template.link" th:value="*{link}" value="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btn btn-outline-info" onclick="loadDefaultTemplate($('#template'))">Установить
+            шаблон по умолчанию
+        </button>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-danger mr-auto" th:data-href="@{delete/{id}(id=*{id})}"
+                th:if="*{id != null}" data-toggle="modal" data-target="#confirm-delete">Удалить
+        </button>
+        <button type="submit" class="btn btn-primary">Добавить</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+    </div>
+
+    <div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Подтверждение удаление</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div>Вы уверены что хотите удалить ресурс:</div>
+                    <b th:text="*{url}"></b>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-danger btn-ok">Удалить</a>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $('#confirm-delete').on('show.bs.modal', function(e) {
+            $(this).find('.btn-ok').attr('href', $(e.relatedTarget).data('href'));
+        });
+    </script>
+</div>

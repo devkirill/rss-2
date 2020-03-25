@@ -1,71 +1,70 @@
 package rss.model.channel;
 
-import javax.persistence.Column;
-import javax.persistence.Embeddable;
-
-@Embeddable
 public class Template {
-    @Column
-    private String main;
+    private TypeParser type;
 
-    @Column
-    private String headline;
+    private String root;
 
-    @Column
-    private String summary;
+    private String guid;
 
-    @Column
-    private String illustration;
+    private String title;
 
-    @Column
-    private String posted;
+    private String description;
 
-    @Column
+    private String pubDate;
+
     private String author;
 
-    @Column
     private String link;
 
     //region getters and setters
 
-    public String getMain() {
-        return main;
+    public TypeParser getType() {
+        return type;
     }
 
-    public void setMain(String main) {
-        this.main = main;
+    public void setType(TypeParser type) {
+        this.type = type;
     }
 
-    public String getHeadline() {
-        return headline;
+    public String getRoot() {
+        return root;
     }
 
-    public void setHeadline(String headline) {
-        this.headline = headline;
+    public void setRoot(String root) {
+        this.root = root;
     }
 
-    public String getSummary() {
-        return summary;
+    public String getGuid() {
+        return guid;
     }
 
-    public void setSummary(String summary) {
-        this.summary = summary;
+    public void setGuid(String guid) {
+        this.guid = guid;
     }
 
-    public String getIllustration() {
-        return illustration;
+    public String getTitle() {
+        return title;
     }
 
-    public void setIllustration(String illustration) {
-        this.illustration = illustration;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public String getPosted() {
-        return posted;
+    public String getDescription() {
+        return description;
     }
 
-    public void setPosted(String posted) {
-        this.posted = posted;
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getPubDate() {
+        return pubDate;
+    }
+
+    public void setPubDate(String pubDate) {
+        this.pubDate = pubDate;
     }
 
     public String getAuthor() {

@@ -6,7 +6,10 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import rss.model.Feed;
 import rss.model.Post;
+import rss.model.channel.Channel;
 import rss.model.channel.Template;
+import rss.model.channel.TypeParser;
+import rss.service.DataReciever;
 import rss.utils.DateUtil;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -20,7 +23,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class XPathParser {
+public class XPathParser implements Parser {
     private DocumentBuilderFactory builderFactory;
     private DocumentBuilder builder;
 
@@ -31,7 +34,11 @@ public class XPathParser {
         } catch (ParserConfigurationException e) {
             throw new IllegalStateException(e);
         }
+    }
 
+    @Override
+    public TypeParser getType() {
+        return TypeParser.XPath;
     }
 
     public String getValue(Node node, String path) {
@@ -47,15 +54,17 @@ public class XPathParser {
         }
     }
 
-    public Post parsePost(Template template, Node node) {
+    public Post parsePost(Node node, Template template) {
         Post post = new Post();
 
-        post.setTitle(getValue(node, template.getHeadline()));
-        post.setDescription(getValue(node, template.getSummary()));
+        post.setTitle(getValue(node, template.getTitle()));
+        post.setDescription(getValue(node, template.getDescription()));
         post.setAuthor(getValue(node, template.getAuthor()));
-        String rawDate = getValue(node, template.getPosted());
+        String rawDate = getValue(node, template.getPubDate());
         post.setRawPubDate(rawDate);
         post.setPubDate(DateUtil.parse(rawDate));
+        post.setLink(getValue(node, template.getLink()));
+        post.setGuid(getValue(node, template.getGuid()));
 
         return post;
     }
@@ -64,7 +73,8 @@ public class XPathParser {
         try {
             Document xmlDocument = builder.parse(stream);
             XPath xPath = XPathFactory.newInstance().newXPath();
-            String expression = template.getMain();
+
+            String expression = template.getRoot();
             NodeList nodeList = (NodeList) xPath.compile(expression).evaluate(xmlDocument, XPathConstants.NODESET);
 
             List<Post> posts = new ArrayList<>();
@@ -72,7 +82,7 @@ public class XPathParser {
             for (int n = 0, len = nodeList.getLength(); n < len; n++) {
                 Node child = nodeList.item(n);
 
-                posts.add(parsePost(template, child));
+                posts.add(parsePost(child, template));
             }
 
             Feed feed = new Feed();
@@ -82,5 +92,14 @@ public class XPathParser {
         } catch (Exception e) {
             throw new IllegalStateException(e);
         }
+    }
+
+    public Feed parseFeed(String uri, Template template) {
+        return parseFeed(new DataReciever().getContent(uri), template);
+    }
+
+    @Override
+    public Feed getFeed(Channel channel) {
+        return parseFeed(channel.getUrl(), channel.getTemplate());
     }
 }

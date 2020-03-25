@@ -1,0 +1,36 @@
+<!doctype html>
+<html xmlns:th="http://www.w3.org/1999/xhtml" lang="en">
+<head th:replace="layout :: head"></head>
+<body>
+
+<nav th:replace="layout :: nav"></nav>
+
+<main role="main" class="container" th:object="${model}">
+    <button type="button" class="btn btn-primary mb-3" onclick="modal('/channel/edit')">
+        Добавить ресурс
+    </button>
+
+    <div class="row">
+        <div class="col-md-4 mb-3" th:each="channel : *{channels}">
+            <div class="card" th:object="${channel}" th:with="feed=${channel.lastFeed}">
+<!--                <img class="card-img-top" th:if="${feed?.image?.url != null}" th:src="${feed?.image.url}" th:alt="${feed?.image.title}" style="object-fit: cover; max-height: 180px"  src="" alt="">-->
+
+                <div class="card-header">
+                    <button type="button" class="btn btn-primary" style="float:right" th:onclick="'modal(\'/channel/edit/' + ${channel.id} + '\')'">
+                        <i class="fas fa-cogs"></i>
+                    </button>
+                    <a class="card-link" th:if="${feed?.link != null}" th:href="${feed?.link}" th:text="${feed?.title}">title</a>
+                    <div th:unless="${feed != null}" th:text="${channel.url}">title</div>
+                </div>
+<!--                <ul class="list-group list-group-flush" th:if="${feed != null}">-->
+<!--                    <li class="list-group-item" th:text="${feed.description}"></li>-->
+<!--                </ul>-->
+            </div>
+        </div>
+    </div>
+</main>
+
+<script th:replace="layout :: script"></script>
+
+</body>
+</html>

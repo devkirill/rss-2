@@ -3,6 +3,7 @@ package rss.model;
 import rss.model.channel.Channel;
 
 import javax.persistence.*;
+import java.time.ZonedDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,8 +22,29 @@ public class Feed {
     @JoinColumn
     private Channel channel;
 
-    @OneToMany(mappedBy = "feed")
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "feed")
     private List<Post> posts = new ArrayList<>();
+
+    @Column(columnDefinition = "TEXT")
+    private String title;
+
+    @Column(columnDefinition = "TEXT")
+    private String description;
+
+    @Column(length = 128)
+    private String link;
+
+//    @Column(length = 16)
+//    private String language;
+//
+//    @Column(length = 256)
+//    private String url;
+
+    @Embedded
+    private Image image;
+
+    @Column
+    private ZonedDateTime pubDate;
 
     //region getters and setters
 
