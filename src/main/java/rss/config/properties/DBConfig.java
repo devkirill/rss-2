@@ -29,6 +29,9 @@ public class DBConfig {
     @Value("${entitymanager.packagesToScan:rss.model}")
     private String packagesToScan;
 
+    @Value("${spring.jpa.properties.hibernate.jdbc.time_zone:GMT}")
+    private String timezone;
+
     //region getters and setters
 
     public String getDriver() {
@@ -93,6 +96,14 @@ public class DBConfig {
 
     public void setPackagesToScan(String packagesToScan) {
         this.packagesToScan = packagesToScan;
+    }
+
+    public String getTimezone() {
+        return timezone;
+    }
+
+    public void setTimezone(String timezone) {
+        this.timezone = timezone;
     }
 
     //endregion

@@ -46,6 +46,7 @@ public class DBConfiguration {
         properties.setProperty("hibernate.hbm2ddl.auto", config.getHbm2ddlAuto());
         properties.setProperty("hibernate.dialect", config.getDialect());
         properties.setProperty("hibernate.show_sql", config.getShowSql());
+        properties.setProperty("hibernate.jdbc.time_zone", config.getTimezone());
         em.setJpaProperties(properties);
 
         return em;
