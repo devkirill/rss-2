@@ -1,8 +1,10 @@
-package rss.service.search;
+package rss.service.view;
 
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
-import rss.model.Post;
+import rss.model.db.Post;
+import rss.model.view.SearchQuery;
+import rss.model.view.SearchResult;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -12,7 +14,7 @@ import java.util.List;
 
 @Service
 @Transactional
-public class SearchPostService {
+public class PostSearchViewService implements PostSearchView {
     @PersistenceContext
     private EntityManager entityManager;
 

@@ -1,6 +1,6 @@
-package rss.service.channel;
+package rss.model.view;
 
-import rss.model.channel.Channel;
+import rss.model.db.Channel;
 
 import java.util.List;
 

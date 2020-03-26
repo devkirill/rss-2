@@ -1,6 +1,4 @@
-package rss.model;
-
-import rss.model.channel.Channel;
+package rss.model.db;
 
 import javax.persistence.*;
 import java.time.ZonedDateTime;

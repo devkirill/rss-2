@@ -1,4 +1,4 @@
-package rss.model.channel;
+package rss.model.db;
 
 import com.vladmihalcea.hibernate.type.json.JsonBinaryType;
 import com.vladmihalcea.hibernate.type.json.JsonStringType;
@@ -6,8 +6,6 @@ import org.hibernate.annotations.JoinFormula;
 import org.hibernate.annotations.Type;
 import org.hibernate.annotations.TypeDef;
 import org.hibernate.annotations.TypeDefs;
-import rss.model.Feed;
-import rss.model.Post;
 
 import javax.persistence.*;
 import java.util.ArrayList;

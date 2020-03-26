@@ -1,4 +1,4 @@
-package rss.service.search;
+package rss.model.view;
 
 public class SearchQuery {
     private int page = 1;

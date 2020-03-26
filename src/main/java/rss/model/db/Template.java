@@ -1,4 +1,4 @@
-package rss.model.channel;
+package rss.model.db;
 
 public class Template {
     private TypeParser type;

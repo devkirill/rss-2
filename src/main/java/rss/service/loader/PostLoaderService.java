@@ -1,19 +1,19 @@
-package rss.service.parser;
+package rss.service.loader;
 
 import org.springframework.stereotype.Service;
-import rss.model.Feed;
-import rss.model.channel.Channel;
-import rss.model.channel.TypeParser;
+import rss.model.db.Channel;
+import rss.model.db.Feed;
+import rss.model.db.TypeParser;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 @Service
-public class PostLoader {
+public class PostLoaderService implements PostLoader {
     private Map<TypeParser, Parser> parserMap;
 
-    public PostLoader(List<Parser> parsers) {
+    public PostLoaderService(List<Parser> parsers) {
         parserMap = new HashMap<>();
 
         for (Parser parser : parsers) {
@@ -23,6 +23,7 @@ public class PostLoader {
         }
     }
 
+    @Override
     public Feed getFeed(Channel channel) {
         Parser parser = parserMap.get(channel.getTemplate().getType());
         if (parser == null) {

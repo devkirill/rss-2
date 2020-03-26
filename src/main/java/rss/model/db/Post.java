@@ -1,7 +1,6 @@
-package rss.model;
+package rss.model.db;
 
 import org.hibernate.annotations.GenericGenerator;
-import rss.model.channel.Channel;
 
 import javax.persistence.*;
 import java.time.ZonedDateTime;

@@ -6,15 +6,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
-import rss.service.search.SearchPostService;
-import rss.service.search.SearchQuery;
-import rss.service.search.SearchResult;
+import rss.model.view.SearchQuery;
+import rss.model.view.SearchResult;
+import rss.service.view.PostSearchView;
 
 @Controller
 @RequestMapping(path = "/")
 public class MainController {
     @Autowired
-    private SearchPostService postService;
+    private PostSearchView searchView;
 
     /**
      * Просмотр карточек с новостями
@@ -23,7 +23,7 @@ public class MainController {
      */
     @GetMapping(path = "/")
     public ModelAndView index(@ModelAttribute("query") SearchQuery query) {
-        SearchResult result = postService.searchString(query);
+        SearchResult result = searchView.searchString(query);
 
         return new ModelAndView("index", "model", result);
     }

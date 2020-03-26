@@ -1,6 +1,6 @@
-package rss.service.search;
+package rss.model.view;
 
-import rss.model.Post;
+import rss.model.db.Post;
 
 import java.util.List;
 

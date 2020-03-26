@@ -1,13 +1,12 @@
-package rss.service;
+package rss.service.loader;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
-import rss.model.Feed;
-import rss.model.Post;
-import rss.model.channel.Channel;
-import rss.service.parser.PostLoader;
+import rss.model.db.Channel;
+import rss.model.db.Feed;
+import rss.model.db.Post;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;

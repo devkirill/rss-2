@@ -1,21 +1,20 @@
-package rss.service.parser;
+package rss.service.loader;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.junit.jupiter.api.Test;
-import rss.model.Feed;
-import rss.model.Post;
-import rss.model.channel.Template;
+import rss.model.db.Feed;
+import rss.model.db.Template;
+import rss.service.loader.parser.XsoupParser;
 
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class JsoupParserTest {
-    public JsoupParser parser = new JsoupParser();
+public class XsoupParserTest {
+    public XsoupParser parser = new XsoupParser();
 
     public String getContent(String fileName) {
         try {
@@ -32,9 +31,9 @@ public class JsoupParserTest {
 
         Template template = new Template();
         template.setRoot("article");
-        template.setTitle("div.post-title");
-        template.setDescription("div.entry-content p");
-        template.setLink("a");
+        template.setTitle("div[@class=post-title]");
+        template.setDescription("div[@class=entry-content]//p");
+        template.setLink(".//a");
 
         Feed feed = parser.getFeed(document, template);
 
@@ -52,23 +51,17 @@ public class JsoupParserTest {
         Document document = Jsoup.parse(content);
 
         Template template = new Template();
-        template.setRoot("article.post");
-        template.setTitle("a.post__title_link");
-        template.setDescription("div.post__text @");
-        template.setGuid("div.post__body a.btn @href");
-        template.setLink("div.post__body a.btn @href");
-        template.setAuthor("span.user-info__nickname");
+        template.setRoot("article[@class=post]");
+        template.setTitle("a[@class=post__title_link]");
+        template.setDescription("div[@class=post__text]");
+        template.setLink("div[@class=post__body]/a[@class=btn]/@href");
+        template.setAuthor("span[@class=user-info__nickname]");
 
         Feed feed = parser.getFeed(document, template);
 
         assertEquals(19, feed.getPosts().size());
-        Post post = feed.getPosts().get(1);
-        assertEquals("Вычисление центра масс за O(1) с помощью интегральных изображений", post.getTitle());
-        assertTrue(post.getDescription().contains("<img src=\"https://habrastorage.org/webt/jz/zu/un/jzzuunk1lhxykcm7wzw8abqoaek.png\">"));
-        assertTrue(post.getDescription().contains("В этой статье я расскажу"));
-        assertTrue(post.getDescription().contains("Какой недостаток имеет это решение и как его исправить"));
-        assertEquals("bad3p", post.getAuthor());
-        assertEquals("https://habr.com/ru/company/pixonic/blog/493300/#habracut", post.getLink());
+        assertEquals("Вычисление центра масс за O(1) с помощью интегральных изображений", feed.getPosts().get(1).getTitle());
+        assertEquals("В этой статье я расскажу", feed.getPosts().get(1).getDescription());
 //        assertEquals("Tue, 17 Mar 2020 23:11:43 GMT", feed.getPosts().get(0).getRawPubDate());
 //        assertEquals(ZonedDateTime.of(2020, 3, 17, 23, 11, 43, 0, ZoneId.of("GMT")), feed.getPosts().get(0).getPubDate());
 //        assertEquals("Kolobok86", feed.getPosts().get(0).getAuthor());

@@ -1,6 +1,7 @@
 package rss.service;
 
 import org.junit.jupiter.api.Test;
+import rss.service.loader.parser.DataReciever;
 import rss.utils.StreamUtil;
 
 import java.io.InputStream;

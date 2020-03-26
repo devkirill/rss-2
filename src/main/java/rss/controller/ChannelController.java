@@ -4,21 +4,21 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
-import rss.model.channel.Channel;
-import rss.service.channel.ChannelService;
+import rss.model.db.Channel;
+import rss.service.view.ChannelView;
 
 @Controller
 @RequestMapping(path = "/channel")
 public class ChannelController {
     @Autowired
-    private ChannelService channelService;
+    private ChannelView channelView;
 
     /**
      * @return Получение всех существующих каналов
      */
     @GetMapping(path = "/")
     public ModelAndView index() {
-        return new ModelAndView("channel", "model", channelService.getChannels());
+        return new ModelAndView("channel", "model", channelView.getChannels());
     }
 
     /**
@@ -27,7 +27,7 @@ public class ChannelController {
      */
     @GetMapping(path = "/edit/{id}")
     public ModelAndView edit(@PathVariable Integer id) {
-        return new ModelAndView("edit", "channel", channelService.getChannelById(id));
+        return new ModelAndView("edit", "channel", channelView.getChannelById(id));
     }
 
     @GetMapping(path = "/edit")
@@ -37,7 +37,7 @@ public class ChannelController {
 
     @PostMapping(path = "/edit/{id}")
     public String update(@PathVariable Integer id, @ModelAttribute("channel") Channel channel) {
-        channelService.update(id, channel);
+        channelView.update(id, channel);
 
         return "redirect:/edit/";
     }

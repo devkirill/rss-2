@@ -1,15 +1,11 @@
-package rss.service.parser;
+package rss.service.loader.parser;
 
 import org.springframework.stereotype.Service;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-import rss.model.Feed;
-import rss.model.Post;
-import rss.model.channel.Channel;
-import rss.model.channel.Template;
-import rss.model.channel.TypeParser;
-import rss.service.DataReciever;
+import rss.model.db.*;
+import rss.service.loader.Parser;
 import rss.utils.DateUtil;
 
 import javax.xml.parsers.DocumentBuilder;

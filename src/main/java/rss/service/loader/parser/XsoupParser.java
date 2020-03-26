@@ -1,14 +1,11 @@
-package rss.service.parser;
+package rss.service.loader.parser;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.springframework.stereotype.Service;
-import rss.model.Feed;
-import rss.model.Post;
-import rss.model.channel.Channel;
-import rss.model.channel.Template;
-import rss.model.channel.TypeParser;
+import rss.model.db.*;
+import rss.service.loader.Parser;
 import rss.utils.DateUtil;
 import us.codecraft.xsoup.Xsoup;
 

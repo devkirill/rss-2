@@ -1,8 +1,9 @@
-package rss.service.parser;
+package rss.service.loader;
 
 import org.junit.jupiter.api.Test;
-import rss.model.Feed;
-import rss.model.channel.Template;
+import rss.model.db.Feed;
+import rss.model.db.Template;
+import rss.service.loader.parser.XPathParser;
 
 import java.io.InputStream;
 import java.time.ZoneId;

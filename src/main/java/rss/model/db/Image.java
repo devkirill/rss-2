@@ -1,4 +1,4 @@
-package rss.model;
+package rss.model.db;
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
