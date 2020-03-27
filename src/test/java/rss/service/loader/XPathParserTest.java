@@ -2,8 +2,10 @@ package rss.service.loader;
 
 import org.junit.jupiter.api.Test;
 import rss.model.db.Feed;
+import rss.model.db.Post;
 import rss.model.db.Template;
 import rss.service.loader.parser.XPathParser;
+import rss.utils.DateUtil;
 
 import java.io.InputStream;
 import java.time.ZoneId;
@@ -23,23 +25,74 @@ public class XPathParserTest {
         }
     }
 
-    @Test
-    public void parseTest() {
-        InputStream stream = this.getClass().getClassLoader().getResourceAsStream("habr.xml");
+    public Template rssTemplate() {
         Template template = new Template();
-        template.setRoot("rss/channel/item");
-        template.setTitle("title/text()");
-        template.setDescription("description");
-        template.setPubDate("pubDate");
-        template.setAuthor("creator");
+        template.setRoot("//channel/item");
 
-        Feed feed = parser.parseFeed(stream, template);
+        template.getFeed().setTitle("//channel/title");
+        template.getFeed().setDescription("//channel/description");
+        template.getFeed().setLanguage("//channel/language");
+        template.getFeed().setImage("//channel/image/url");
+        template.getFeed().setPubDate("//channel/pubDate|//channel/lastBuildDate");
+        template.getFeed().setLink("//channel/link/text()");
 
+        template.getPost().setTitle("title");
+        template.getPost().setDescription("description");
+        template.getPost().setPubDate("pubDate");
+        template.getPost().setAuthor("creator");
+        template.getPost().setLink("link");
+        template.getPost().setGuid("guid");
+
+        return template;
+    }
+
+    @Test
+    public void parseXmlTest() {
+        InputStream stream = this.getClass().getClassLoader().getResourceAsStream("habr.xml");
+
+        Feed feed = parser.parseFeed(stream, rssTemplate());
+
+        assertEquals("Все публикации подряд", feed.getTitle());
+        assertEquals("Все публикации подряд на Хабре", feed.getDescription());
+        assertEquals("ru", feed.getLanguage());
+        assertEquals("https://habr.com/images/logo.png", feed.getImage());
+        assertEquals("https://habr.com/ru/all/all/", feed.getLink());
+        assertEquals(DateUtil.parse("Tue, 17 Mar 2020 23:14:47 GMT").toEpochSecond(), feed.getPubDate().toEpochSecond());
         assertEquals(20, feed.getPosts().size());
-        assertTrue(feed.getPosts().get(0).getTitle().contains("Chrome 80 stable"));
-        assertTrue(feed.getPosts().get(0).getDescription().contains("Начали изучать что это такое"));
-        assertEquals("Tue, 17 Mar 2020 23:11:43 GMT", feed.getPosts().get(0).getRawPubDate());
-        assertEquals(ZonedDateTime.of(2020, 3, 17, 23, 11, 43, 0, ZoneId.of("GMT")), feed.getPosts().get(0).getPubDate());
-        assertEquals("Kolobok86", feed.getPosts().get(0).getAuthor());
+
+        Post post = feed.getPosts().get(0);
+
+        assertTrue(post.getTitle().contains("Chrome 80 stable"));
+        assertTrue(post.getDescription().contains("Начали изучать что это такое"));
+        assertEquals("https://habr.com/ru/post/492830/", post.getGuid());
+        assertEquals("https://habr.com/ru/post/492830/?utm_source=habrahabr&utm_medium=rss&utm_campaign=492830", post.getLink());
+        assertEquals("Tue, 17 Mar 2020 23:11:43 GMT", post.getRawPubDate());
+        assertEquals(ZonedDateTime.of(2020, 3, 17, 23, 11, 43, 0, ZoneId.of("GMT")).toEpochSecond(), post.getPubDate().toEpochSecond());
+        assertEquals("Kolobok86", post.getAuthor());
+    }
+
+    @Test
+    public void parseXml2Test() {
+        InputStream stream = this.getClass().getClassLoader().getResourceAsStream("tproger.xml");
+
+        Feed feed = parser.parseFeed(stream, rssTemplate());
+
+        assertEquals("Tproger", feed.getTitle());
+        assertEquals("Актуальные новости из мира IT, регулярные образовательные статьи и переводы, поток информации для программистов и всех, кто связан с миром разработки.", feed.getDescription());
+        assertEquals("ru-RU", feed.getLanguage());
+        assertEquals("https://tproger.ru/apple-touch-icon.png", feed.getImage());
+        assertEquals("https://tproger.ru", feed.getLink());
+        assertEquals(DateUtil.parse("Fri, 27 Mar 2020 20:17:05 +0000").toEpochSecond(), feed.getPubDate().toEpochSecond());
+        assertEquals(50, feed.getPosts().size());
+
+        Post post = feed.getPosts().get(0);
+
+        assertTrue(post.getTitle().contains("Домашний разраб"));
+        assertTrue(post.getDescription().contains("hackathon"));
+        assertEquals("https://tproger.ru/?p=127043", post.getGuid());
+        assertEquals("https://tproger.ru/events/devdom-hackathon/", post.getLink());
+        assertEquals("Fri, 27 Mar 2020 17:12:46 +0000", post.getRawPubDate());
+        assertEquals(ZonedDateTime.of(2020, 3, 27, 17, 12, 46, 0, ZoneId.of("GMT")).toEpochSecond(), post.getPubDate().toEpochSecond());
+        assertEquals("Тимур Кондратьев", post.getAuthor());
     }
 }

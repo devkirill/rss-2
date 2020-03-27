@@ -6,9 +6,11 @@ import org.jsoup.nodes.Element;
 import org.jsoup.nodes.Node;
 import org.jsoup.select.Elements;
 import org.springframework.stereotype.Service;
-import rss.model.db.*;
+import rss.model.db.Channel;
+import rss.model.db.Feed;
+import rss.model.db.Template;
+import rss.model.db.TypeParser;
 import rss.service.loader.Parser;
-import rss.utils.DateUtil;
 
 import java.net.URL;
 import java.util.List;
@@ -17,12 +19,13 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 @Service
-public class JsoupParser implements Parser {
+public class JsoupParser extends AbstractParser<Element, Document> implements Parser {
     @Override
     public TypeParser getType() {
         return TypeParser.Jsoup;
     }
 
+    @Override
     public String getValue(Element element, String path) {
         try {
             if (path == null || path.trim().isEmpty())
@@ -57,36 +60,11 @@ public class JsoupParser implements Parser {
         }
     }
 
-    public Post parsePost(Element element, Template template) {
-        Post post = new Post();
-
-        post.setTitle(getValue(element, template.getTitle()));
-        post.setDescription(getValue(element, template.getDescription()));
-        post.setAuthor(getValue(element, template.getAuthor()));
-        String rawDate = getValue(element, template.getPubDate());
-        post.setRawPubDate(rawDate);
-        post.setPubDate(DateUtil.parse(rawDate));
-        post.setLink(getValue(element, template.getLink()));
-        post.setGuid(getValue(element, template.getGuid()));
-
-        return post;
-    }
-
-    public Feed getFeed(Document document, Template template) {
+    @Override
+    public List<Element> getNodes(Document root, Template template) {
         String expression = template.getRoot();
-        Elements elements = document.select(expression);
-
-        List<Post> posts = elements.stream()
-                .map(element -> parsePost(element, template))
-                .collect(Collectors.toList());
-
-        Feed feed = new Feed();
-        feed.setPosts(posts);
-
-        return feed;
+        return root.select(expression);
     }
-
-    private DataReciever dataReciever = new DataReciever();
 
     @Override
     public Feed getFeed(Channel channel) {
@@ -97,7 +75,7 @@ public class JsoupParser implements Parser {
 
             Document document = Jsoup.parse(url, 5000);
 
-            return getFeed(document, channel.getTemplate());
+            return parse(document, channel.getTemplate());
         } catch (Exception e) {
             throw new IllegalStateException(e);
         }

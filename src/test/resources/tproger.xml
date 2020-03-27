@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+     xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+>
+
+    <channel>
+        <title>Tproger</title>
+        <atom:link href="https://tproger.ru/feed/" rel="self" type="application/rss+xml" />
+        <link>https://tproger.ru</link>
+        <description>Актуальные новости из мира IT, регулярные образовательные статьи и переводы, поток информации для программистов и всех, кто связан с миром разработки.</description>
+        <lastBuildDate>Fri, 27 Mar 2020 20:17:05 +0000</lastBuildDate>
+        <language>ru-RU</language>
+        <sy:updatePeriod>
+            hourly	</sy:updatePeriod>
+        <sy:updateFrequency>
+            12	</sy:updateFrequency>
+        <generator>https://wordpress.org/?v=5.3.2</generator>
+        <image>
+            <title>Tproger</title>
+            <link>https://tproger.ru</link>
+            <url>https://tproger.ru/apple-touch-icon.png</url>
+        </image>
+        <item>
+            <title>28 марта – 14 апреля, онлайн: хакатон «Домашний разраб»</title>
+            <link>https://tproger.ru/events/devdom-hackathon/</link>
+            <comments>https://tproger.ru/events/devdom-hackathon/#respond</comments>
+            <pubDate>Fri, 27 Mar 2020 17:12:46 +0000</pubDate>
+            <dc:creator><![CDATA[Тимур Кондратьев]]></dc:creator>
+            <category><![CDATA[Level Up]]></category>
+            <category><![CDATA[Веб-разработка]]></category>
+            <category><![CDATA[ВКонтакте]]></category>
+            <category><![CDATA[Мобильная разработка]]></category>
+            <category><![CDATA[Партнёрский материал]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=127043</guid>
+            <description><![CDATA[<p>Онлайн-конкурс по разработке полезных приложений на платформе VK Mini Apps в условиях самоизоляции. Три тура с призовым фондом 300 000 рублей.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/events/devdom-hackathon/">Хакатон «Домашний разраб»</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/events/devdom-hackathon/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>24 марта – 2 апреля, онлайн: конференция NVIDIA GTC Digital</title>
+            <link>https://tproger.ru/events/nvidia-gtc-digital/</link>
+            <comments>https://tproger.ru/events/nvidia-gtc-digital/#respond</comments>
+            <pubDate>Fri, 27 Mar 2020 10:24:06 +0000</pubDate>
+            <dc:creator><![CDATA[Тимур Кондратьев]]></dc:creator>
+            <category><![CDATA[Level Up]]></category>
+            <category><![CDATA[NVIDIA]]></category>
+            <category><![CDATA[Анализ данных]]></category>
+            <category><![CDATA[Искусственный интеллект]]></category>
+            <category><![CDATA[Компьютерная графика]]></category>
+            <category><![CDATA[Компьютерное зрение]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126978</guid>
+            <description><![CDATA[<p>Крупнейшая конференция по технологиям GPU от NVIDIA в этом году проходит в онлайн-формате и доступна бесплатно. В программе вебинары, лекции и демо.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/events/nvidia-gtc-digital/">Конференция NVIDIA GTC Digital</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/events/nvidia-gtc-digital/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>28 марта, онлайн: виртуальный PHP-митап</title>
+            <link>https://tproger.ru/events/virtual-php-meetup/</link>
+            <comments>https://tproger.ru/events/virtual-php-meetup/#respond</comments>
+            <pubDate>Thu, 26 Mar 2020 17:43:17 +0000</pubDate>
+            <dc:creator><![CDATA[Светлана Козлова]]></dc:creator>
+            <category><![CDATA[Level Up]]></category>
+            <category><![CDATA[API]]></category>
+            <category><![CDATA[PHP]]></category>
+            <category><![CDATA[Архитектура ПО]]></category>
+            <category><![CDATA[Рефакторинг]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126933</guid>
+            <description><![CDATA[<p>На встрече вас ждут 6 докладов от профессиональных спикеров, викторина, общение с ПХПботом, комнаты для холиваров и виртуальный бар со всеми участниками.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/events/virtual-php-meetup/">Виртуальный PHP-митап</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/events/virtual-php-meetup/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>6–17 апреля, онлайн: лекции по программированию, дизайну, маркетингу и управлению</title>
+            <link>https://tproger.ru/events/geekchange-2020/</link>
+            <comments>https://tproger.ru/events/geekchange-2020/#respond</comments>
+            <pubDate>Thu, 26 Mar 2020 10:42:01 +0000</pubDate>
+            <dc:creator><![CDATA[Тимур Кондратьев]]></dc:creator>
+            <category><![CDATA[Level Up]]></category>
+            <category><![CDATA[Быстрый старт]]></category>
+            <category><![CDATA[Веб-дизайн]]></category>
+            <category><![CDATA[Веб-разработка]]></category>
+            <category><![CDATA[Дизайн интерфейсов и UX]]></category>
+            <category><![CDATA[Для начинающих]]></category>
+            <category><![CDATA[Карьера]]></category>
+            <category><![CDATA[Партнёрский материал]]></category>
+            <category><![CDATA[Управление проектами]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126780</guid>
+            <description><![CDATA[<p>Участников ждут лекции от экспертов из топовых компаний, а ещё — практика, советы от рекрутеров, ответы на вопросы и возможность учиться бесплатно.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/events/geekchange-2020/">Онлайн-лекции по программированию, дизайну, маркетингу и управлению</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/events/geekchange-2020/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>Личная мотивация разработчика: где её взять и зачем это нужно?</title>
+            <link>https://tproger.ru/articles/increase-developer-personal-motivation/</link>
+            <comments>https://tproger.ru/articles/increase-developer-personal-motivation/#respond</comments>
+            <pubDate>Thu, 26 Mar 2020 08:18:12 +0000</pubDate>
+            <dc:creator><![CDATA[Типичный программист]]></dc:creator>
+            <category><![CDATA[Статьи]]></category>
+            <category><![CDATA[Soft Skills]]></category>
+            <category><![CDATA[Для мотивации]]></category>
+            <category><![CDATA[Советы]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126899</guid>
+            <description><![CDATA[<p>Чтобы избежать выгорания, часто достаточно хорошей мотивации. Опытный айтишник рассказывает, из каких факторов она складывается и как её сохранять.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/articles/increase-developer-personal-motivation/">Личная мотивация разработчика: где её взять и зачем это нужно?</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/articles/increase-developer-personal-motivation/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>Подборка книг по разработке под Android</title>
+            <link>https://tproger.ru/books/android-books-list/</link>
+            <comments>https://tproger.ru/books/android-books-list/#respond</comments>
+            <pubDate>Wed, 25 Mar 2020 14:10:19 +0000</pubDate>
+            <dc:creator><![CDATA[Типичный программист]]></dc:creator>
+            <category><![CDATA[Книги]]></category>
+            <category><![CDATA[Android]]></category>
+            <category><![CDATA[Для начинающих]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=122709</guid>
+            <description><![CDATA[<p>Теория и задачки, Kotlin и Java, разработка UI и другие тонкости: всё это в нашей небольшой подборке книг по Android-разработке.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/books/android-books-list/">Подборка книг по разработке под Android</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/books/android-books-list/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>Для чего хорош Java?</title>
+            <link>https://tproger.ru/articles/what-java-is-good-for/</link>
+            <comments>https://tproger.ru/articles/what-java-is-good-for/#respond</comments>
+            <pubDate>Tue, 24 Mar 2020 13:10:41 +0000</pubDate>
+            <dc:creator><![CDATA[Тимур Кондратьев]]></dc:creator>
+            <category><![CDATA[Статьи]]></category>
+            <category><![CDATA[Java]]></category>
+            <category><![CDATA[Для начинающих]]></category>
+            <category><![CDATA[Для чего хорош язык X]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126740</guid>
+            <description><![CDATA[<p>С Java удобно начать изучение программирования. Но в каких сферах вы сможете потом работать? Рассказываем о самых популярных применениях Java.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/articles/what-java-is-good-for/">Для чего хорош Java?</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/articles/what-java-is-good-for/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>24 апреля, Минск: конференция RAUX 2020</title>
+            <link>https://tproger.ru/events/raux-2020/</link>
+            <comments>https://tproger.ru/events/raux-2020/#respond</comments>
+            <pubDate>Mon, 23 Mar 2020 19:41:50 +0000</pubDate>
+            <dc:creator><![CDATA[Светлана Козлова]]></dc:creator>
+            <category><![CDATA[Level Up]]></category>
+            <category><![CDATA[Веб-дизайн]]></category>
+            <category><![CDATA[Дизайн интерфейсов и UX]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126816</guid>
+            <description><![CDATA[<p>Поговорят про взаимодействие дизайна и бизнеса, UX-дизайн и usability, проектирование интерфейсов в Web и Mobile, сервис-дизайн и многое другое.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/events/raux-2020/">Конференция RAUX 2020</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/events/raux-2020/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>Как развить soft skills обучая других: 5 историй разработчиков</title>
+            <link>https://tproger.ru/articles/improving-soft-skills-by-teaching-others/</link>
+            <comments>https://tproger.ru/articles/improving-soft-skills-by-teaching-others/#respond</comments>
+            <pubDate>Mon, 23 Mar 2020 08:23:22 +0000</pubDate>
+            <dc:creator><![CDATA[Типичный программист]]></dc:creator>
+            <category><![CDATA[Статьи]]></category>
+            <category><![CDATA[Soft Skills]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126671</guid>
+            <description><![CDATA[<p>Программисты часто ассоциируются с людьми, у которых не всё хорошо с soft skills. Узнаём у 5 разработчиков, как они стали менторами и развили эти навыки.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/articles/improving-soft-skills-by-teaching-others/">Как развить soft skills обучая других: 5 историй разработчиков</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/articles/improving-soft-skills-by-teaching-others/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>20 апреля, онлайн: конференция OKR Russia</title>
+            <link>https://tproger.ru/events/okr-russia/</link>
+            <comments>https://tproger.ru/events/okr-russia/#respond</comments>
+            <pubDate>Sun, 22 Mar 2020 11:59:42 +0000</pubDate>
+            <dc:creator><![CDATA[Светлана Козлова]]></dc:creator>
+            <category><![CDATA[Level Up]]></category>
+            <category><![CDATA[Agile]]></category>
+            <category><![CDATA[Управление проектами]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126808</guid>
+            <description><![CDATA[<p>Интерактивная онлайн-конференция о том, как организации ставят и достигают стратегические цели с максимальным вовлечением сотрудников.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/events/okr-russia/">Конференция OKR Russia</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/events/okr-russia/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>26–27 сентября, Новосибирск: хакатон Tour.Hack</title>
+            <link>https://tproger.ru/events/tour-hack/</link>
+            <comments>https://tproger.ru/events/tour-hack/#respond</comments>
+            <pubDate>Sun, 22 Mar 2020 11:19:34 +0000</pubDate>
+            <dc:creator><![CDATA[Светлана Козлова]]></dc:creator>
+            <category><![CDATA[Level Up]]></category>
+            <category><![CDATA[Для начинающих]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126744</guid>
+            <description><![CDATA[<p>За 48 часов участникам предстоит получить конкретные результаты и найти прикладные решения поставленных задач в сфере туризма.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/events/tour-hack/">Хакатон Tour.Hack</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/events/tour-hack/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>17 апреля, онлайн: форум DX DAY 2020</title>
+            <link>https://tproger.ru/events/dx-day-2020/</link>
+            <comments>https://tproger.ru/events/dx-day-2020/#respond</comments>
+            <pubDate>Sun, 22 Mar 2020 11:16:38 +0000</pubDate>
+            <dc:creator><![CDATA[Светлана Козлова]]></dc:creator>
+            <category><![CDATA[Level Up]]></category>
+            <category><![CDATA[Управление проектами]]></category>
+            <category><![CDATA[Финтех]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126758</guid>
+            <description><![CDATA[<p>Поговорят про изменения бизнес-моделей и продуктов, организационной структуры и процессов, корпоративной культуры и внедрения инноваций.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/events/dx-day-2020/">Форум DX DAY 2020</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/events/dx-day-2020/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>11–12 апреля, Казань: хакатон «Интеллектуальные транспортные системы и элементы ситуационных центров»</title>
+            <link>https://tproger.ru/events/intelligent-transport-systems/</link>
+            <comments>https://tproger.ru/events/intelligent-transport-systems/#respond</comments>
+            <pubDate>Sun, 22 Mar 2020 11:11:54 +0000</pubDate>
+            <dc:creator><![CDATA[Светлана Козлова]]></dc:creator>
+            <category><![CDATA[Level Up]]></category>
+            <category><![CDATA[Data Science]]></category>
+            <category><![CDATA[Python]]></category>
+            <category><![CDATA[Анализ данных]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126709</guid>
+            <description><![CDATA[<p>Командам за 36 часов предстоит найти решения для задач управления «умной» транспортной инфраструктурой или развития информационно-аналитической платформы «Ситуационный центр».</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/events/intelligent-transport-systems/">Хакатон «Интеллектуальные транспортные системы и элементы ситуационных центров»</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/events/intelligent-transport-systems/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>9–10 апреля, онлайн: конференция «Я — директор по маркетингу»</title>
+            <link>https://tproger.ru/events/marketing-director-conference/</link>
+            <comments>https://tproger.ru/events/marketing-director-conference/#respond</comments>
+            <pubDate>Wed, 18 Mar 2020 20:11:28 +0000</pubDate>
+            <dc:creator><![CDATA[Светлана Козлова]]></dc:creator>
+            <category><![CDATA[Level Up]]></category>
+            <category><![CDATA[Soft Skills]]></category>
+            <category><![CDATA[Управление проектами]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126684</guid>
+            <description><![CDATA[<p>Поговорят о том, как перестраивать коммуникации и рекламу, что такое по-настоящему сквозная аналитика и как создать экосистему, комфортную для клиентов.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/events/marketing-director-conference/">Конференция «Я — директор по маркетингу»</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/events/marketing-director-conference/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>Видеокарта из металлолома и синей изоленты</title>
+            <link>https://tproger.ru/video/videocard-diy/</link>
+            <comments>https://tproger.ru/video/videocard-diy/#respond</comments>
+            <pubDate>Wed, 18 Mar 2020 17:04:28 +0000</pubDate>
+            <dc:creator><![CDATA[Александр Ланский]]></dc:creator>
+            <category><![CDATA[Видео]]></category>
+            <category><![CDATA[DIY]]></category>
+            <category><![CDATA[Hardware]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126100</guid>
+            <description><![CDATA[<p>Расшифровка видео, в котором автор рассказывает, как работают видеокарты, и собирает свою из максимально простых элементов.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/video/videocard-diy/">Видеокарта из металлолома и синей изоленты</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/video/videocard-diy/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>5 апреля, онлайн: соревнование Moscow CTF School</title>
+            <link>https://tproger.ru/events/moscow-ctf-school-2020/</link>
+            <comments>https://tproger.ru/events/moscow-ctf-school-2020/#respond</comments>
+            <pubDate>Tue, 17 Mar 2020 19:05:44 +0000</pubDate>
+            <dc:creator><![CDATA[Светлана Козлова]]></dc:creator>
+            <category><![CDATA[Level Up]]></category>
+            <category><![CDATA[Безопасность]]></category>
+            <category><![CDATA[Веб-разработка]]></category>
+            <category><![CDATA[Криптография]]></category>
+            <category><![CDATA[Олимпиадное программирование]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126638</guid>
+            <description><![CDATA[<p>Во время конкурса участникам предстоит столкнуться с задачами, связанными с различными аспектами информационной безопасности.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/events/moscow-ctf-school-2020/">Соревнование Moscow CTF School 2020</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/events/moscow-ctf-school-2020/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>hent-AI: нейросеть, которая убирает цензуру из аниме</title>
+            <link>https://tproger.ru/articles/hent-ai-neuralnet/</link>
+            <comments>https://tproger.ru/articles/hent-ai-neuralnet/#respond</comments>
+            <pubDate>Tue, 17 Mar 2020 17:52:32 +0000</pubDate>
+            <dc:creator><![CDATA[Анна Чуватова]]></dc:creator>
+            <category><![CDATA[Статьи]]></category>
+            <category><![CDATA[GitHub]]></category>
+            <category><![CDATA[Интересные проекты]]></category>
+            <category><![CDATA[Нейронные сети]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126641</guid>
+            <description><![CDATA[<p>Нашли на GitHub любопытную нейросеть. По ссылке можно найти принцип работы и инструменты, а также исходный код, чтобы запустить у себя или доработать.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/articles/hent-ai-neuralnet/">hent-AI: нейросеть, которая убирает цензуру из аниме</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/articles/hent-ai-neuralnet/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>2–3 апреля, Нижний Новгород: конференция «Digital-Оттепель V»</title>
+            <link>https://tproger.ru/events/digital-ottepel-v/</link>
+            <comments>https://tproger.ru/events/digital-ottepel-v/#respond</comments>
+            <pubDate>Mon, 16 Mar 2020 19:07:27 +0000</pubDate>
+            <dc:creator><![CDATA[Тимур Кондратьев]]></dc:creator>
+            <category><![CDATA[Level Up]]></category>
+            <category><![CDATA[Для начинающих]]></category>
+            <category><![CDATA[Интернет]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126620</guid>
+            <description><![CDATA[<p>Большая конференция соберёт топовых практиков, которые будут делиться последними новостями в Digital, строить графики, прогнозировать и рекомендовать.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/events/digital-ottepel-v/">Конференция «Digital-Оттепель V»</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/events/digital-ottepel-v/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>Нужны ли вашему проекту микросервисы? Вопросы, которые помогут разобраться</title>
+            <link>https://tproger.ru/translations/you-dont-need-microservices/</link>
+            <comments>https://tproger.ru/translations/you-dont-need-microservices/#respond</comments>
+            <pubDate>Mon, 16 Mar 2020 18:59:06 +0000</pubDate>
+            <dc:creator><![CDATA[Типичный программист]]></dc:creator>
+            <category><![CDATA[Переводы]]></category>
+            <category><![CDATA[Архитектура ПО]]></category>
+            <category><![CDATA[Микросервисы]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126591</guid>
+            <description><![CDATA[<p>Всё больше компаний внедряют микросервисы в свои проекты. Но нужны ли микросервисы вам? Рассказываем, о чём стоит подумать, прежде чем их использовать.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/translations/you-dont-need-microservices/">Нужны ли вашему проекту микросервисы? Вопросы, которые помогут разобраться</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/translations/you-dont-need-microservices/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>27 марта, Екатеринбург: конференция FailConf 2020</title>
+            <link>https://tproger.ru/events/failconf-2020/</link>
+            <comments>https://tproger.ru/events/failconf-2020/#respond</comments>
+            <pubDate>Mon, 16 Mar 2020 18:23:05 +0000</pubDate>
+            <dc:creator><![CDATA[Светлана Козлова]]></dc:creator>
+            <category><![CDATA[Level Up]]></category>
+            <category><![CDATA[Советы]]></category>
+            <category><![CDATA[Управление проектами]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126507</guid>
+            <description><![CDATA[<p>На конференции бизнесмены расскажут о совершённых ошибках и неудачах, с которыми они столкнулись при запуске и ведении проектов.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/events/failconf-2020/">Конференция FailConf 2020</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/events/failconf-2020/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>28 марта, онлайн: митап «Управление проектами»</title>
+            <link>https://tproger.ru/events/meetup-project-management/</link>
+            <comments>https://tproger.ru/events/meetup-project-management/#respond</comments>
+            <pubDate>Mon, 16 Mar 2020 18:17:03 +0000</pubDate>
+            <dc:creator><![CDATA[Светлана Козлова]]></dc:creator>
+            <category><![CDATA[Level Up]]></category>
+            <category><![CDATA[Управление проектами]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126577</guid>
+            <description><![CDATA[<p>Профессиональные руководители проектов расскажут про самые успешные кейсы и поделятся примерами их внедрения, а также подискутируют о новостях IT-мира.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/events/meetup-project-management/">Митап «Управление проектами»</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/events/meetup-project-management/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>Как попасть в компанию мечты без бэкграунда</title>
+            <link>https://tproger.ru/articles/how-to-get-into-dream-team-without-background/</link>
+            <comments>https://tproger.ru/articles/how-to-get-into-dream-team-without-background/#respond</comments>
+            <pubDate>Sat, 14 Mar 2020 10:16:11 +0000</pubDate>
+            <dc:creator><![CDATA[Типичный программист]]></dc:creator>
+            <category><![CDATA[Статьи]]></category>
+            <category><![CDATA[Soft Skills]]></category>
+            <category><![CDATA[Для начинающих]]></category>
+            <category><![CDATA[Карьера]]></category>
+            <category><![CDATA[Советы]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126485</guid>
+            <description><![CDATA[<p>Директор по персоналу BI.ZONE рассказала, как без красивого резюме получить приглашение на собеседование и почему социальная жизнь иногда важнее опыта.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/articles/how-to-get-into-dream-team-without-background/">Как попасть в компанию мечты без бэкграунда</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/articles/how-to-get-into-dream-team-without-background/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>Инструменты и библиотеки для веб-скрейпинга</title>
+            <link>https://tproger.ru/articles/tips-and-libraries-for-web-scraping/</link>
+            <comments>https://tproger.ru/articles/tips-and-libraries-for-web-scraping/#respond</comments>
+            <pubDate>Fri, 13 Mar 2020 15:15:19 +0000</pubDate>
+            <dc:creator><![CDATA[Типичный программист]]></dc:creator>
+            <category><![CDATA[Статьи]]></category>
+            <category><![CDATA[Инструменты]]></category>
+            <category><![CDATA[Парсинг]]></category>
+            <category><![CDATA[Советы]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126441</guid>
+            <description><![CDATA[<p>Рассказываем о готовых инструментах для веб-скрейпинга: популярных онлайн-сервисах и библиотеках для языков Python, JavaScript и Java.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/articles/tips-and-libraries-for-web-scraping/">Инструменты и библиотеки для веб-скрейпинга</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/articles/tips-and-libraries-for-web-scraping/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>26 марта, Москва: конференция Privacy Day 2020</title>
+            <link>https://tproger.ru/events/privacy-day-2020/</link>
+            <comments>https://tproger.ru/events/privacy-day-2020/#respond</comments>
+            <pubDate>Thu, 12 Mar 2020 18:20:18 +0000</pubDate>
+            <dc:creator><![CDATA[Светлана Козлова]]></dc:creator>
+            <category><![CDATA[Level Up]]></category>
+            <category><![CDATA[Безопасность]]></category>
+            <category><![CDATA[Интернет]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126475</guid>
+            <description><![CDATA[<p>Ежегодная тематическая конференция для специалистов и простых пользователей, посвящённая защите персональных данных и приватности в сети.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/events/privacy-day-2020/">Конференция Privacy Day 2020</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/events/privacy-day-2020/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>19 марта, Саратов: PM MEETUP #2</title>
+            <link>https://tproger.ru/events/pm-meetup-2/</link>
+            <comments>https://tproger.ru/events/pm-meetup-2/#respond</comments>
+            <pubDate>Thu, 12 Mar 2020 18:06:09 +0000</pubDate>
+            <dc:creator><![CDATA[Светлана Козлова]]></dc:creator>
+            <category><![CDATA[Level Up]]></category>
+            <category><![CDATA[Управление проектами]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126498</guid>
+            <description><![CDATA[<p>Поговорят о распределённых командах, мотивации, состоянии максимальной эффективности и предложат идеи для мотивационных программ.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/events/pm-meetup-2/">PM MEETUP #2</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/events/pm-meetup-2/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>27 марта, Москва: V конференция «Клеверенс»</title>
+            <link>https://tproger.ru/events/cleverence-conf-2020/</link>
+            <comments>https://tproger.ru/events/cleverence-conf-2020/#respond</comments>
+            <pubDate>Thu, 12 Mar 2020 17:58:06 +0000</pubDate>
+            <dc:creator><![CDATA[Тимур Кондратьев]]></dc:creator>
+            <category><![CDATA[Level Up]]></category>
+            <category><![CDATA[Инструменты]]></category>
+            <category><![CDATA[Мобильная разработка]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126532</guid>
+            <description><![CDATA[<p>Крупная конференция по автоматизации товарного учёта, объединяющая самые актуальные идеи цифрового преобразования бизнеса.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/events/cleverence-conf-2020/">V конференция «Клеверенс»</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/events/cleverence-conf-2020/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>Практика Data Science: где искать датасеты и что с ними делать — отвечают эксперты</title>
+            <link>https://tproger.ru/experts/data-science-practice/</link>
+            <comments>https://tproger.ru/experts/data-science-practice/#respond</comments>
+            <pubDate>Thu, 12 Mar 2020 15:48:16 +0000</pubDate>
+            <dc:creator><![CDATA[Никита Прияцелюк]]></dc:creator>
+            <category><![CDATA[Ответы экспертов]]></category>
+            <category><![CDATA[Big Data]]></category>
+            <category><![CDATA[Data Science]]></category>
+            <category><![CDATA[Машинное обучение]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126460</guid>
+            <description><![CDATA[<p>Начинающие специалисты в Data Science порой не знают, где искать датасеты и что с ними делать. Узнали у экспертов, что они могут посоветовать.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/experts/data-science-practice/">Практика Data Science: где искать датасеты и что с ними делать — отвечают эксперты</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/experts/data-science-practice/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>Онлайн: обучение Java-разработке с оплатой после трудоустройства</title>
+            <link>https://tproger.ru/events/java-mentor-courses-mar-20/</link>
+            <comments>https://tproger.ru/events/java-mentor-courses-mar-20/#respond</comments>
+            <pubDate>Thu, 12 Mar 2020 15:41:33 +0000</pubDate>
+            <dc:creator><![CDATA[Тимур Кондратьев]]></dc:creator>
+            <category><![CDATA[Level Up]]></category>
+            <category><![CDATA[Java]]></category>
+            <category><![CDATA[Быстрый старт]]></category>
+            <category><![CDATA[Веб-разработка]]></category>
+            <category><![CDATA[Для начинающих]]></category>
+            <category><![CDATA[Карьера]]></category>
+            <category><![CDATA[Партнёрский материал]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126515</guid>
+            <description><![CDATA[<p>Учебная программа по современному стеку веб-разработки на Java. Главная особенность — не придётся ничего платить, пока не найдёте первую работу в Москве.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/events/java-mentor-courses-mar-20/">Обучение Java-разработке с оплатой после трудоустройства</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/events/java-mentor-courses-mar-20/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>Безопасный веб-скрейпинг: как извлекать данные с сайтов, чтобы вас не заблокировали</title>
+            <link>https://tproger.ru/translations/web-scraping-without-getting-blocked/</link>
+            <comments>https://tproger.ru/translations/web-scraping-without-getting-blocked/#respond</comments>
+            <pubDate>Wed, 11 Mar 2020 13:05:23 +0000</pubDate>
+            <dc:creator><![CDATA[Типичный программист]]></dc:creator>
+            <category><![CDATA[Переводы]]></category>
+            <category><![CDATA[Советы]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126423</guid>
+            <description><![CDATA[<p>Рассказываем, что такое скрейпинг и как не получить блокировку, извлекая данные с сайтов.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/translations/web-scraping-without-getting-blocked/">Безопасный веб-скрейпинг: как извлекать данные с сайтов, чтобы вас не заблокировали</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/translations/web-scraping-without-getting-blocked/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>4 июня, Москва: форум BIG DATA 2020</title>
+            <link>https://tproger.ru/events/big-data-2020/</link>
+            <comments>https://tproger.ru/events/big-data-2020/#respond</comments>
+            <pubDate>Tue, 10 Mar 2020 19:27:33 +0000</pubDate>
+            <dc:creator><![CDATA[Светлана Козлова]]></dc:creator>
+            <category><![CDATA[Level Up]]></category>
+            <category><![CDATA[Big Data]]></category>
+            <category><![CDATA[Искусственный интеллект]]></category>
+            <category><![CDATA[Машинное обучение]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126412</guid>
+            <description><![CDATA[<p>В программе — пленарные сессии, круглый стол с лауреатами премии CDO Award 2020 и доклады от ведущих экспертов индустрии больших данных.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/events/big-data-2020/">Форум BIG DATA 2020</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/events/big-data-2020/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>21–23 мая, Киев: конференция TestingStage'20</title>
+            <link>https://tproger.ru/events/testingstage-20/</link>
+            <comments>https://tproger.ru/events/testingstage-20/#respond</comments>
+            <pubDate>Tue, 10 Mar 2020 19:23:19 +0000</pubDate>
+            <dc:creator><![CDATA[Тимур Кондратьев]]></dc:creator>
+            <category><![CDATA[Level Up]]></category>
+            <category><![CDATA[Тестирование]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126444</guid>
+            <description><![CDATA[<p>Большая конференция для тестировщиков, автоматизаторов и пентестеров со спикерами со всего мира, крутыми воркшопами и обсуждениями.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/events/testingstage-20/">Конференция TestingStage&#8217;20</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/events/testingstage-20/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>3–5 апреля, онлайн: хакатон EcoHack 2020</title>
+            <link>https://tproger.ru/events/ecohack-2020/</link>
+            <comments>https://tproger.ru/events/ecohack-2020/#respond</comments>
+            <pubDate>Tue, 10 Mar 2020 18:31:08 +0000</pubDate>
+            <dc:creator><![CDATA[Тимур Кондратьев]]></dc:creator>
+            <category><![CDATA[Level Up]]></category>
+            <category><![CDATA[Big Data]]></category>
+            <category><![CDATA[Анализ данных]]></category>
+            <category><![CDATA[Для начинающих]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126434</guid>
+            <description><![CDATA[<p>На EcoHack участников ждут интересные и сложные задачи в рамках двух основных направлений — экологического мониторинга и раздельного сбора отходов.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/events/ecohack-2020/">Хакатон EcoHack 2020</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/events/ecohack-2020/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>Стена технического долга: наглядная альтернатива багтрекеру</title>
+            <link>https://tproger.ru/translations/wall-of-technical-debt/</link>
+            <comments>https://tproger.ru/translations/wall-of-technical-debt/#respond</comments>
+            <pubDate>Tue, 10 Mar 2020 14:06:32 +0000</pubDate>
+            <dc:creator><![CDATA[Типичный программист]]></dc:creator>
+            <category><![CDATA[Переводы]]></category>
+            <category><![CDATA[Организация разработки]]></category>
+            <category><![CDATA[Советы]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126327</guid>
+            <description><![CDATA[<p>Рассказываем об инструменте, который поможет более осознанно работать с техническим долгом и продемонстрирует, почему важно его выплачивать.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/translations/wall-of-technical-debt/">Стена технического долга: наглядная альтернатива багтрекеру</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/translations/wall-of-technical-debt/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>30 марта, онлайн: митап IT talk SPb «Инструменты анализа заинтересованных сторон для повседневной жизни и проектов»</title>
+            <link>https://tproger.ru/events/it-talk-spb-stakeholder-analysis-tools/</link>
+            <comments>https://tproger.ru/events/it-talk-spb-stakeholder-analysis-tools/#respond</comments>
+            <pubDate>Mon, 09 Mar 2020 20:35:58 +0000</pubDate>
+            <dc:creator><![CDATA[Светлана Козлова]]></dc:creator>
+            <category><![CDATA[Level Up]]></category>
+            <category><![CDATA[Анализ данных]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126356</guid>
+            <description><![CDATA[<p>Встреча, на которой расскажут и покажут на примерах, как можно применять в повседневной жизни основные инструменты анализа заинтересованных лиц.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/events/it-talk-spb-stakeholder-analysis-tools/">Митап IT talk SPb «Инструменты анализа заинтересованных сторон для повседневной жизни и проектов»</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/events/it-talk-spb-stakeholder-analysis-tools/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>5 июня, Киев: конференция Java Fest 2020</title>
+            <link>https://tproger.ru/events/java-fest-2020/</link>
+            <comments>https://tproger.ru/events/java-fest-2020/#respond</comments>
+            <pubDate>Mon, 09 Mar 2020 20:27:09 +0000</pubDate>
+            <dc:creator><![CDATA[Светлана Козлова]]></dc:creator>
+            <category><![CDATA[Level Up]]></category>
+            <category><![CDATA[Java]]></category>
+            <category><![CDATA[Архитектура ПО]]></category>
+            <category><![CDATA[Микросервисы]]></category>
+            <category><![CDATA[Реактивное программирование]]></category>
+            <category><![CDATA[Фреймворки]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126340</guid>
+            <description><![CDATA[<p>На конференции опытные спикеры поговорят про новые функции Java, архитектуру ПО, микросервисы, реактивное программирование и безопасность.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/events/java-fest-2020/">Конференция Java Fest 2020</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/events/java-fest-2020/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>5–6 июня, Киев: конференция DevOps Fest 2020</title>
+            <link>https://tproger.ru/events/devops-fest-2020/</link>
+            <comments>https://tproger.ru/events/devops-fest-2020/#respond</comments>
+            <pubDate>Mon, 09 Mar 2020 20:19:20 +0000</pubDate>
+            <dc:creator><![CDATA[Светлана Козлова]]></dc:creator>
+            <category><![CDATA[Level Up]]></category>
+            <category><![CDATA[DevOps]]></category>
+            <category><![CDATA[Open Source]]></category>
+            <category><![CDATA[Архитектура ПО]]></category>
+            <category><![CDATA[Веб-разработка]]></category>
+            <category><![CDATA[Методологии разработки]]></category>
+            <category><![CDATA[Микросервисы]]></category>
+            <category><![CDATA[Паттерны проектирования]]></category>
+            <category><![CDATA[Тестирование]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126332</guid>
+            <description><![CDATA[<p>На конференции специалисты из США, Европы, России и Украины поговорят про инструменты, фреймворки и практики для эффективного DevOps.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/events/devops-fest-2020/">Конференция DevOps Fest 2020</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/events/devops-fest-2020/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>25–27 марта, Москва: выставка VendExpo и WRS5 2020</title>
+            <link>https://tproger.ru/events/vendexpo-wrs5-2020/</link>
+            <comments>https://tproger.ru/events/vendexpo-wrs5-2020/#respond</comments>
+            <pubDate>Mon, 09 Mar 2020 20:10:25 +0000</pubDate>
+            <dc:creator><![CDATA[Тимур Кондратьев]]></dc:creator>
+            <category><![CDATA[Level Up]]></category>
+            <category><![CDATA[Роботы]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126368</guid>
+            <description><![CDATA[<p>Российские и зарубежные компании представят на VendExpo оборудование и комплектующие для вендинговой торговли, сопутствующие продукты и сервисы.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/events/vendexpo-wrs5-2020/">Выставка «VendExpo и WRS5»</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/events/vendexpo-wrs5-2020/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>Что использует команда Tproger: инструменты для мониторинга и улучшения производительности веб-сайта</title>
+            <link>https://tproger.ru/articles/tproger-performance-monitoring-and-improving-tools/</link>
+            <comments>https://tproger.ru/articles/tproger-performance-monitoring-and-improving-tools/#respond</comments>
+            <pubDate>Mon, 09 Mar 2020 14:02:15 +0000</pubDate>
+            <dc:creator><![CDATA[Типичный программист]]></dc:creator>
+            <category><![CDATA[Статьи]]></category>
+            <category><![CDATA[Google Chrome]]></category>
+            <category><![CDATA[Веб-разработка]]></category>
+            <category><![CDATA[Инструменты]]></category>
+            <category><![CDATA[Производительность]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126289</guid>
+            <description><![CDATA[<p>Рассказываем, как повысить скорость загрузки сайта и с помощью каких инструментов отслеживать показатели. Проверено разработчиками Tproger.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/articles/tproger-performance-monitoring-and-improving-tools/">Что использует команда Tproger: инструменты для мониторинга и улучшения производительности веб-сайта</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/articles/tproger-performance-monitoring-and-improving-tools/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>21 марта, Киев: NoCode MeetUp 2020</title>
+            <link>https://tproger.ru/events/nocode-meetup-2020/</link>
+            <comments>https://tproger.ru/events/nocode-meetup-2020/#respond</comments>
+            <pubDate>Sun, 08 Mar 2020 14:06:32 +0000</pubDate>
+            <dc:creator><![CDATA[Тимур Кондратьев]]></dc:creator>
+            <category><![CDATA[Level Up]]></category>
+            <category><![CDATA[Визуализация]]></category>
+            <category><![CDATA[Для начинающих]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126318</guid>
+            <description><![CDATA[<p>Представители Bubble.io, Skillum и предприниматели, использующие платформу в работе, расскажут о личном опыте в визуальной разработке и удобных техниках.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/events/nocode-meetup-2020/">NoCode MeetUp 2020</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/events/nocode-meetup-2020/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>21 марта, Воронеж: Backend Meetup meta/conf</title>
+            <link>https://tproger.ru/events/backend-meetup-meta-conf/</link>
+            <comments>https://tproger.ru/events/backend-meetup-meta-conf/#respond</comments>
+            <pubDate>Sat, 07 Mar 2020 17:51:43 +0000</pubDate>
+            <dc:creator><![CDATA[Тимур Кондратьев]]></dc:creator>
+            <category><![CDATA[Level Up]]></category>
+            <category><![CDATA[Go]]></category>
+            <category><![CDATA[Node.js]]></category>
+            <category><![CDATA[Python]]></category>
+            <category><![CDATA[Ruby]]></category>
+            <category><![CDATA[Веб-разработка]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126311</guid>
+            <description><![CDATA[<p>Первый в 2020-м году митап из серии meta/conf. Встреча посвящена бэкенду и языкам Ruby, Golang, Rust, Node.js, Python и Elixir.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/events/backend-meetup-meta-conf/">Backend Meetup meta/conf</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/events/backend-meetup-meta-conf/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>19 марта, Санкт-Петербург: Monitoring Meetup: CI/CD процессы</title>
+            <link>https://tproger.ru/events/ci-cd-monitoring-meetup/</link>
+            <comments>https://tproger.ru/events/ci-cd-monitoring-meetup/#respond</comments>
+            <pubDate>Sat, 07 Mar 2020 17:26:33 +0000</pubDate>
+            <dc:creator><![CDATA[Светлана Козлова]]></dc:creator>
+            <category><![CDATA[Level Up]]></category>
+            <category><![CDATA[Методологии разработки]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126222</guid>
+            <description><![CDATA[<p>Поговорят о процессах непрерывной поставки и интеграции в мониторинге под эгидой технологического сообщества Monhouse.tech.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/events/ci-cd-monitoring-meetup/">Monitoring Meetup: CI/CD-процессы</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/events/ci-cd-monitoring-meetup/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>20–22 марта, Санкт-Петербурге: хакатон HackUniversity 2020</title>
+            <link>https://tproger.ru/events/hackuniversity-2020/</link>
+            <comments>https://tproger.ru/events/hackuniversity-2020/#respond</comments>
+            <pubDate>Sat, 07 Mar 2020 17:19:09 +0000</pubDate>
+            <dc:creator><![CDATA[Тимур Кондратьев]]></dc:creator>
+            <category><![CDATA[Level Up]]></category>
+            <category><![CDATA[Веб-разработка]]></category>
+            <category><![CDATA[Дополненная реальность]]></category>
+            <category><![CDATA[Интернет вещей]]></category>
+            <category><![CDATA[Искусственный интеллект]]></category>
+            <category><![CDATA[Мобильная разработка]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126303</guid>
+            <description><![CDATA[<p>Участники получат призы и инвестиции в проекты, вакансии напрямую от топ-компаний, возможности роста от российских и зарубежных инкубаторов.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/events/hackuniversity-2020/">Хакатон HackUniversity 2020</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/events/hackuniversity-2020/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>Топ-25 самых рекомендуемых книг по программированию</title>
+            <link>https://tproger.ru/books/the-25-most-recommended-programming-books-of-all-time/</link>
+            <comments>https://tproger.ru/books/the-25-most-recommended-programming-books-of-all-time/#respond</comments>
+            <pubDate>Fri, 06 Mar 2020 16:20:17 +0000</pubDate>
+            <dc:creator><![CDATA[Никита Прияцелюк]]></dc:creator>
+            <category><![CDATA[Книги]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126240</guid>
+            <description><![CDATA[<p>Нашли для вас труд одного программиста, который составил список самых рекомендуемых книг, проанализировав десятки подобных списков.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/books/the-25-most-recommended-programming-books-of-all-time/">Топ-25 самых рекомендуемых книг по программированию</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/books/the-25-most-recommended-programming-books-of-all-time/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>12–13 июля, Москва: конференция DevOops 2020 Moscow</title>
+            <link>https://tproger.ru/events/devoops-2020-moscow/</link>
+            <comments>https://tproger.ru/events/devoops-2020-moscow/#respond</comments>
+            <pubDate>Thu, 05 Mar 2020 08:38:47 +0000</pubDate>
+            <dc:creator><![CDATA[Тимур Кондратьев]]></dc:creator>
+            <category><![CDATA[Level Up]]></category>
+            <category><![CDATA[DevOps]]></category>
+            <category><![CDATA[Партнёрский материал]]></category>
+            <category><![CDATA[Системное администрирование]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126213</guid>
+            <description><![CDATA[<p>Хардкорная конференция для DevOps-инженеров и не только. В центре внимания — процессы в разработке и DevOps-культура, SRE и Cloud Native.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/events/devoops-2020-moscow/">Конференция DevOops 2020 Moscow</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/events/devoops-2020-moscow/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>31 марта–1 апреля, онлайн: конференция MCOM 2020</title>
+            <link>https://tproger.ru/events/mcom-2020/</link>
+            <comments>https://tproger.ru/events/mcom-2020/#respond</comments>
+            <pubDate>Wed, 04 Mar 2020 18:29:25 +0000</pubDate>
+            <dc:creator><![CDATA[Светлана Козлова]]></dc:creator>
+            <category><![CDATA[Level Up]]></category>
+            <category><![CDATA[Product Development]]></category>
+            <category><![CDATA[Управление проектами]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126170</guid>
+            <description><![CDATA[<p>Конференция на которой поговорят про создание, развитие и поиск точек роста маркетплейсов, экосистем, e-commerce проектов.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/events/mcom-2020/">Конференция MCOM 2020</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/events/mcom-2020/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>18 марта, Москва: митап «Growth Hacking и команды роста»</title>
+            <link>https://tproger.ru/events/growth-hacking-meetup/</link>
+            <comments>https://tproger.ru/events/growth-hacking-meetup/#respond</comments>
+            <pubDate>Wed, 04 Mar 2020 18:20:08 +0000</pubDate>
+            <dc:creator><![CDATA[Тимур Кондратьев]]></dc:creator>
+            <category><![CDATA[Level Up]]></category>
+            <category><![CDATA[Для продвинутых]]></category>
+            <category><![CDATA[Инструменты]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126177</guid>
+            <description><![CDATA[<p>На примере реальных кейсов поговорят о том, как использовать инструменты стартапов для активации роста и улучшения мотивации сотрудников в корпорациях.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/events/growth-hacking-meetup/">Митап «Growth Hacking и команды роста»</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/events/growth-hacking-meetup/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>14–15 июля, Москва: конференция С++ Russia 2020</title>
+            <link>https://tproger.ru/events/cpp-russia-2020-moscow/</link>
+            <comments>https://tproger.ru/events/cpp-russia-2020-moscow/#respond</comments>
+            <pubDate>Wed, 04 Mar 2020 10:04:23 +0000</pubDate>
+            <dc:creator><![CDATA[Тимур Кондратьев]]></dc:creator>
+            <category><![CDATA[Level Up]]></category>
+            <category><![CDATA[C++]]></category>
+            <category><![CDATA[Для продолжающих]]></category>
+            <category><![CDATA[Партнёрский материал]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126156</guid>
+            <description><![CDATA[<p>Два дня и несколько треков хардкорных технических докладов, посвященных C++: concurrency, производительность, архитектура и инфраструктурные решения.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/events/cpp-russia-2020-moscow/">Конференция C++ Russia 2020 Moscow</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/events/cpp-russia-2020-moscow/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>Какие алгоритмы и структуры данных нужно освоить начинающему специалисту по Data Science — отвечают эксперты</title>
+            <link>https://tproger.ru/experts/data-science-algorithms/</link>
+            <comments>https://tproger.ru/experts/data-science-algorithms/#respond</comments>
+            <pubDate>Wed, 04 Mar 2020 08:28:14 +0000</pubDate>
+            <dc:creator><![CDATA[Никита Прияцелюк]]></dc:creator>
+            <category><![CDATA[Ответы экспертов]]></category>
+            <category><![CDATA[Data Science]]></category>
+            <category><![CDATA[Для начинающих]]></category>
+            <category><![CDATA[Машинное обучение]]></category>
+            <category><![CDATA[Советы]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=125887</guid>
+            <description><![CDATA[<p>Алгоритмы, структуры данных, модели машинного обучения — спрашиваем у экспертов, на что нужно обратить внимание новичку в Data Science.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/experts/data-science-algorithms/">Какие алгоритмы и структуры данных нужно освоить начинающему специалисту по Data Science — отвечают эксперты</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/experts/data-science-algorithms/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>4–5 апреля, Нур-Султан: хакатон HackNU 2020</title>
+            <link>https://tproger.ru/events/hacknu-2020/</link>
+            <comments>https://tproger.ru/events/hacknu-2020/#respond</comments>
+            <pubDate>Tue, 03 Mar 2020 19:31:20 +0000</pubDate>
+            <dc:creator><![CDATA[Светлана Козлова]]></dc:creator>
+            <category><![CDATA[Level Up]]></category>
+            <category><![CDATA[Для начинающих]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126105</guid>
+            <description><![CDATA[<p>Хакатон, где участники формируют команды и решают реальные проблемы, предоставленные ведущими международными и казахстанскими компаниями.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/events/hacknu-2020/">Хакатон HackNU 2020</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/events/hacknu-2020/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+        <item>
+            <title>Let&#8217;s Encrypt сейчас отзывает 3 000 000 сертификатов: возможно, вам тоже нужно перевыпустить</title>
+            <link>https://tproger.ru/articles/lets-encrypt-bug-renew-certificate/</link>
+            <comments>https://tproger.ru/articles/lets-encrypt-bug-renew-certificate/#respond</comments>
+            <pubDate>Tue, 03 Mar 2020 17:42:50 +0000</pubDate>
+            <dc:creator><![CDATA[Саша]]></dc:creator>
+            <category><![CDATA[Статьи]]></category>
+            <category><![CDATA[Безопасность]]></category>
+
+            <guid isPermaLink="false">https://tproger.ru/?p=126148</guid>
+            <description><![CDATA[<p>У Let's Encrypt обнаружился баг в коде CAA, который появлялся во время выпуска сертификата. Баг исправили, но некоторые сертификаты будут отозваны уже 4 марта.</p>
+<p>— Читать дальше «<a rel="nofollow" href="https://tproger.ru/articles/lets-encrypt-bug-renew-certificate/">Let&#8217;s Encrypt сейчас отзывает 3 000 000 сертификатов: возможно, вам тоже нужно перевыпустить</a>»</p>
+]]></description>
+            <wfw:commentRss>https://tproger.ru/articles/lets-encrypt-bug-renew-certificate/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+    </channel>
+</rss>

@@ -30,16 +30,13 @@ public class Feed {
     private String description;
 
     @Column(length = 128)
+    private String language;
+
+    @Column(columnDefinition = "TEXT")
+    private String image;
+
+    @Column(columnDefinition = "TEXT")
     private String link;
-
-//    @Column(length = 16)
-//    private String language;
-//
-//    @Column(length = 256)
-//    private String url;
-
-    @Embedded
-    private Image image;
 
     @Column
     private ZonedDateTime pubDate;
@@ -68,6 +65,54 @@ public class Feed {
 
     public void setPosts(List<Post> posts) {
         this.posts = posts;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getLanguage() {
+        return language;
+    }
+
+    public void setLanguage(String language) {
+        this.language = language;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public String getLink() {
+        return link;
+    }
+
+    public void setLink(String link) {
+        this.link = link;
+    }
+
+    public ZonedDateTime getPubDate() {
+        return pubDate;
+    }
+
+    public void setPubDate(ZonedDateTime pubDate) {
+        this.pubDate = pubDate;
     }
 
     //endregion

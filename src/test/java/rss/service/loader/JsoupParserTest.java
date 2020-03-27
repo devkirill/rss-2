@@ -33,11 +33,11 @@ public class JsoupParserTest {
 
         Template template = new Template();
         template.setRoot("article");
-        template.setTitle("div.post-title");
-        template.setDescription("div.entry-content p");
-        template.setLink("a");
+        template.getPost().setTitle("div.post-title");
+        template.getPost().setDescription("div.entry-content p");
+        template.getPost().setLink("a");
 
-        Feed feed = parser.getFeed(document, template);
+        Feed feed = parser.parse(document, template);
 
         assertEquals(32, feed.getPosts().size());
         assertEquals("Видеокарта из металлолома и синей изоленты", feed.getPosts().get(0).getTitle());
@@ -54,13 +54,13 @@ public class JsoupParserTest {
 
         Template template = new Template();
         template.setRoot("article.post");
-        template.setTitle("a.post__title_link");
-        template.setDescription("div.post__text @");
-        template.setGuid("div.post__body a.btn @href");
-        template.setLink("div.post__body a.btn @href");
-        template.setAuthor("span.user-info__nickname");
+        template.getPost().setTitle("a.post__title_link");
+        template.getPost().setDescription("div.post__text @");
+        template.getPost().setGuid("div.post__body a.btn @href");
+        template.getPost().setLink("div.post__body a.btn @href");
+        template.getPost().setAuthor("span.user-info__nickname");
 
-        Feed feed = parser.getFeed(document, template);
+        Feed feed = parser.parse(document, template);
 
         assertEquals(19, feed.getPosts().size());
         Post post = feed.getPosts().get(1);

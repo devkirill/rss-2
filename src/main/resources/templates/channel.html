@@ -19,7 +19,8 @@
                     <button type="button" class="btn btn-primary" style="float:right" th:onclick="'modal(\'/channel/edit/' + ${channel.id} + '\')'">
                         <i class="fas fa-cogs"></i>
                     </button>
-                    <a class="card-link" th:if="${feed?.link != null}" th:href="${feed?.link}" th:text="${feed?.title}">title</a>
+<!--                    <span th:text="${feed?.link}">-->
+                    <a class="card-link" th:if="${feed?.link ?: channel?.url != null}" th:href="${feed?.link ?: channel?.url}" th:text="${feed?.title ?: feed?.link ?: channel?.url}">title</a>
                     <div th:unless="${feed != null}" th:text="${channel.url}">title</div>
                 </div>
 <!--                <ul class="list-group list-group-flush" th:if="${feed != null}">-->
