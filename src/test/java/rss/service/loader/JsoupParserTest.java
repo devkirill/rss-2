@@ -65,7 +65,8 @@ public class JsoupParserTest {
         assertEquals(19, feed.getPosts().size());
         Post post = feed.getPosts().get(1);
         assertEquals("Вычисление центра масс за O(1) с помощью интегральных изображений", post.getTitle());
-        assertTrue(post.getDescription().contains("<img src=\"https://habrastorage.org/webt/jz/zu/un/jzzuunk1lhxykcm7wzw8abqoaek.png\">"));
+        assertTrue(post.getDescription().contains("img"));
+        assertTrue(post.getDescription().contains("https://habrastorage.org/webt/jz/zu/un/jzzuunk1lhxykcm7wzw8abqoaek.png"));
         assertTrue(post.getDescription().contains("В этой статье я расскажу"));
         assertTrue(post.getDescription().contains("Какой недостаток имеет это решение и как его исправить"));
         assertEquals("bad3p", post.getAuthor());
