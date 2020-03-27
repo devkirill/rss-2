@@ -1,17 +1,13 @@
 package rss.model.db;
 
-import org.hibernate.annotations.GenericGenerator;
-
 import javax.persistence.*;
 import java.time.ZonedDateTime;
 
 @Entity
 @Table(name = "post")
-@GenericGenerator(name = "UUID", strategy = "org.hibernate.id.UUIDGenerator")
 public class Post {
     @Id
     @Column(updatable = false, nullable = false)
-//    @GeneratedValue(generator = "UUID", strategy = GenerationType.IDENTITY)
     private String guid;
 
     @ManyToOne
