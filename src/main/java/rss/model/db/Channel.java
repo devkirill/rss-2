@@ -6,6 +6,7 @@ import org.hibernate.annotations.JoinFormula;
 import org.hibernate.annotations.Type;
 import org.hibernate.annotations.TypeDef;
 import org.hibernate.annotations.TypeDefs;
+import rss.model.db.template.Template;
 
 import javax.persistence.*;
 import java.util.ArrayList;

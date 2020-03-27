@@ -1,6 +1,10 @@
 package rss.service.loader.parser;
 
-import rss.model.db.*;
+import rss.model.db.Feed;
+import rss.model.db.Post;
+import rss.model.db.template.FeedTemplate;
+import rss.model.db.template.PostTemplate;
+import rss.model.db.template.Template;
 import rss.utils.DateUtil;
 
 import java.util.List;

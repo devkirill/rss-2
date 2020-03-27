@@ -3,7 +3,7 @@ package rss.service.loader;
 import org.junit.jupiter.api.Test;
 import rss.model.db.Feed;
 import rss.model.db.Post;
-import rss.model.db.Template;
+import rss.model.db.template.Template;
 import rss.service.loader.parser.XPathParser;
 import rss.utils.DateUtil;
 

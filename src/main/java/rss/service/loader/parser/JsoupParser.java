@@ -8,8 +8,8 @@ import org.jsoup.select.Elements;
 import org.springframework.stereotype.Service;
 import rss.model.db.Channel;
 import rss.model.db.Feed;
-import rss.model.db.Template;
-import rss.model.db.TypeParser;
+import rss.model.db.template.Template;
+import rss.model.db.template.TypeParser;
 import rss.service.loader.Parser;
 
 import java.net.URL;

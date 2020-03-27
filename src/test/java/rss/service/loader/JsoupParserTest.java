@@ -5,7 +5,7 @@ import org.jsoup.nodes.Document;
 import org.junit.jupiter.api.Test;
 import rss.model.db.Feed;
 import rss.model.db.Post;
-import rss.model.db.Template;
+import rss.model.db.template.Template;
 import rss.service.loader.parser.JsoupParser;
 
 import java.nio.charset.StandardCharsets;

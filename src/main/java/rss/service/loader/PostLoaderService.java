@@ -3,7 +3,7 @@ package rss.service.loader;
 import org.springframework.stereotype.Service;
 import rss.model.db.Channel;
 import rss.model.db.Feed;
-import rss.model.db.TypeParser;
+import rss.model.db.template.TypeParser;
 
 import java.util.HashMap;
 import java.util.List;

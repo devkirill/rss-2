@@ -6,8 +6,8 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import rss.model.db.Channel;
 import rss.model.db.Feed;
-import rss.model.db.Template;
-import rss.model.db.TypeParser;
+import rss.model.db.template.Template;
+import rss.model.db.template.TypeParser;
 import rss.service.loader.Parser;
 
 import javax.xml.parsers.DocumentBuilder;

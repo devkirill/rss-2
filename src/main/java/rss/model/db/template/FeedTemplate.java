@@ -1,4 +1,4 @@
-package rss.model.db;
+package rss.model.db.template;
 
 public class FeedTemplate {
     private String title;
