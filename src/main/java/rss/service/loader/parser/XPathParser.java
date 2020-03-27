@@ -44,7 +44,7 @@ public class XPathParser implements Parser {
 
             XPath xPath = XPathFactory.newInstance().newXPath();
 
-            return xPath.compile(path).evaluate(node, XPathConstants.STRING).toString();
+            return xPath.compile(path).evaluate(node, XPathConstants.STRING).toString().trim();
         } catch (Exception e) {
             throw new IllegalStateException(e);
         }

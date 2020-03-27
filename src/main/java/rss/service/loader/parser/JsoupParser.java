@@ -46,12 +46,12 @@ public class JsoupParser implements Parser {
                 if (withHtml)
                     return selectedElement.stream()
                             .flatMap(el -> el.childNodes().stream())
-                        .map(Node::toString)
-                        .collect(Collectors.joining());
+                            .map(Node::toString)
+                            .collect(Collectors.joining()).trim();
 
-                return selectedElement.text();
-            }else
-                return selectedElement.attr(attr);
+                return selectedElement.text().trim();
+            } else
+                return selectedElement.attr(attr).trim();
         } catch (Exception e) {
             throw new IllegalStateException(e);
         }
