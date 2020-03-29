@@ -6,26 +6,26 @@
 <nav th:replace="layout :: nav"></nav>
 
 <main role="main" class="container" th:object="${model}">
-    <button type="button" class="btn btn-primary mb-3" onclick="modal('/channel/edit')">
+    <button type="button" class="btn btn-primary mb-3" onclick="modal('/channel/edit', {size:'modal-lg'})">
         Добавить ресурс
     </button>
 
     <div class="row">
         <div class="col-md-4 mb-3" th:each="channel : *{channels}">
             <div class="card" th:object="${channel}" th:with="feed=${channel.lastFeed}">
-<!--                <img class="card-img-top" th:if="${feed?.image?.url != null}" th:src="${feed?.image.url}" th:alt="${feed?.image.title}" style="object-fit: cover; max-height: 180px"  src="" alt="">-->
+                <img class="card-img-top" th:if="${feed?.image != null && feed?.image != ''}" th:src="${feed?.image}" th:alt="${feed?.title}" style="object-fit: cover; max-height: 180px" src="" alt="">
 
                 <div class="card-header">
-                    <button type="button" class="btn btn-primary" style="float:right" th:onclick="'modal(\'/channel/edit/' + ${channel.id} + '\')'">
+                    <button type="button" class="btn btn-primary" style="float:right" th:onclick="'modal(\'/channel/edit/' + ${channel.id} + '\', {size:\'modal-lg\'})'">
                         <i class="fas fa-cogs"></i>
                     </button>
 <!--                    <span th:text="${feed?.link}">-->
                     <a class="card-link" th:if="${feed?.link ?: channel?.url != null}" th:href="${feed?.link ?: channel?.url}" th:text="${feed?.title ?: feed?.link ?: channel?.url}">title</a>
                     <div th:unless="${feed != null}" th:text="${channel.url}">title</div>
                 </div>
-<!--                <ul class="list-group list-group-flush" th:if="${feed != null}">-->
-<!--                    <li class="list-group-item" th:text="${feed.description}"></li>-->
-<!--                </ul>-->
+                <ul class="list-group list-group-flush" th:if="${feed != null}">
+                    <li class="list-group-item" th:text="${feed.description}"></li>
+                </ul>
             </div>
         </div>
     </div>

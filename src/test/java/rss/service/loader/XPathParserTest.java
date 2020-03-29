@@ -3,9 +3,9 @@ package rss.service.loader;
 import org.junit.jupiter.api.Test;
 import rss.model.db.Feed;
 import rss.model.db.Post;
-import rss.model.db.template.Template;
 import rss.service.loader.parser.XPathParser;
 import rss.utils.DateUtil;
+import rss.utils.DefaultTemplate;
 
 import java.io.InputStream;
 import java.time.ZoneId;
@@ -25,32 +25,11 @@ public class XPathParserTest {
         }
     }
 
-    public Template rssTemplate() {
-        Template template = new Template();
-        template.setRoot("//channel/item");
-
-        template.getFeed().setTitle("//channel/title");
-        template.getFeed().setDescription("//channel/description");
-        template.getFeed().setLanguage("//channel/language");
-        template.getFeed().setImage("//channel/image/url");
-        template.getFeed().setPubDate("//channel/pubDate|//channel/lastBuildDate");
-        template.getFeed().setLink("//channel/link/text()");
-
-        template.getPost().setTitle("title");
-        template.getPost().setDescription("description");
-        template.getPost().setPubDate("pubDate");
-        template.getPost().setAuthor("creator");
-        template.getPost().setLink("link");
-        template.getPost().setGuid("guid");
-
-        return template;
-    }
-
     @Test
     public void parseXmlTest() {
         InputStream stream = this.getClass().getClassLoader().getResourceAsStream("habr.xml");
 
-        Feed feed = parser.parseFeed(stream, rssTemplate());
+        Feed feed = parser.parseFeed(stream, DefaultTemplate.getRssTemplate());
 
         assertEquals("Все публикации подряд", feed.getTitle());
         assertEquals("Все публикации подряд на Хабре", feed.getDescription());
@@ -75,7 +54,7 @@ public class XPathParserTest {
     public void parseXml2Test() {
         InputStream stream = this.getClass().getClassLoader().getResourceAsStream("tproger.xml");
 
-        Feed feed = parser.parseFeed(stream, rssTemplate());
+        Feed feed = parser.parseFeed(stream, DefaultTemplate.getRssTemplate());
 
         assertEquals("Tproger", feed.getTitle());
         assertEquals("Актуальные новости из мира IT, регулярные образовательные статьи и переводы, поток информации для программистов и всех, кто связан с миром разработки.", feed.getDescription());

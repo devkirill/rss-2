@@ -27,7 +27,8 @@ public class PostLoaderService implements PostLoader {
     public Feed getFeed(Channel channel) {
         Parser parser = parserMap.get(channel.getTemplate().getType());
         if (parser == null) {
-            throw new IllegalStateException("Parser not exists");
+//            System.err.println(channel.getTemplate().getType().toString());
+            throw new IllegalStateException("Parser not exists, channel - " + channel.getId());
         }
 
         return parser.getFeed(channel);

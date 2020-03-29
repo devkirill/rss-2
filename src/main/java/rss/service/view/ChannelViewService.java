@@ -40,6 +40,8 @@ public class ChannelViewService implements ChannelView {
         } else {
             Channel dbChannel = entityManager.find(Channel.class, id);
 
+            dbChannel.setUrl(channel.getUrl());
+            dbChannel.setMake(channel.isMake());
             dbChannel.setTemplate(channel.getTemplate());
         }
 

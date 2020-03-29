@@ -11,6 +11,7 @@ import rss.model.db.Feed;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
+import java.time.ZonedDateTime;
 import java.util.List;
 
 @Service
@@ -34,6 +35,8 @@ public class Harverster {
         channels.forEach(channel -> {
             Feed feed = parser.getFeed(channel);
 
+            populateNullFields(feed);
+
             if (!feed.getPosts().isEmpty()) {
                 feed.setChannel(channel);
                 feed.getPosts().forEach(post -> {
@@ -48,5 +51,10 @@ public class Harverster {
         });
 
         entityManager.flush();
+    }
+
+    public void populateNullFields(Feed feed) {
+        if (feed.getPubDate() == null)
+            feed.setPubDate(ZonedDateTime.now());
     }
 }
