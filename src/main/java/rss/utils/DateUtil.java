@@ -41,6 +41,11 @@ public class DateUtil {
         return null;
     }
 
+    /**
+     * Парсер дат, задумывалось что он умеет парсить основные человеко читаемые форматы (в том числе и относительные текущей даты)
+     * @param stringDate - строка с датой
+     * @return
+     */
     public static ZonedDateTime parse(String stringDate) {
         for (String format : FORMATS) {
             ZonedDateTime parsedDate = parse(stringDate, format);
