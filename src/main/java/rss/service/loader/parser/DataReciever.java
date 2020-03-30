@@ -10,7 +10,6 @@ public class DataReciever {
         BufferedInputStream buffInputStream = null;
 
         try {
-            System.setProperty("http.agent", "insomnia/6.6.2");
             URL url = new URL(uri);
 
             URLConnection urlConnection = url.openConnection();
