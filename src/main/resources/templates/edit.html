@@ -8,8 +8,8 @@
     </div>
     <div class="modal-body">
         <div class="form-check">
-            <input type='hidden' value='false' name='make'>
             <input class="form-check-input" type="checkbox" id="make" name="make" value="true" th:checked="*{make}">
+            <input type="hidden" name="make" value="false" >
             <label class="form-check-label" for="make">Выполнять построение</label>
         </div>
 
@@ -40,28 +40,28 @@
                                 <h6>Настройка шаблона meta информации канала</h6>
                             </div>
                             <div>
-                                <label for="feed-title" class="col-form-label">Название сайта</label>
-                                <input id="feed-title" type="text" class="form-control" name="template.feed.title" th:value="*{feed.title}" value="">
+                                <label for="template-feed-title" class="col-form-label">Название сайта</label>
+                                <input id="template-feed-title" type="text" class="form-control" name="template.feed.title" th:value="*{feed.title}" value="">
                             </div>
                             <div>
-                                <label for="feed-description" class="col-form-label">Описание сайта</label>
-                                <input id="feed-description" type="text" class="form-control" name="template.feed.description" th:value="*{feed.description}" value="">
+                                <label for="template-feed-description" class="col-form-label">Описание сайта</label>
+                                <input id="template-feed-description" type="text" class="form-control" name="template.feed.description" th:value="*{feed.description}" value="">
                             </div>
                             <div>
-                                <label for="feed-link" class="col-form-label">URL сайта</label>
-                                <input id="feed-link" type="text" class="form-control" name="template.feed.link" th:value="*{feed.link}" value="">
+                                <label for="template-feed-link" class="col-form-label">URL сайта</label>
+                                <input id="template-feed-link" type="text" class="form-control" name="template.feed.link" th:value="*{feed.link}" value="">
                             </div>
                             <div>
-                                <label for="feed-image" class="col-form-label">Изображение сайта</label>
-                                <input id="feed-image" type="text" class="form-control" name="template.feed.image" th:value="*{feed.image}" value="">
+                                <label for="template-feed-image" class="col-form-label">Изображение сайта</label>
+                                <input id="template-feed-image" type="text" class="form-control" name="template.feed.image" th:value="*{feed.image}" value="">
                             </div>
                             <div>
-                                <label for="feed-lang" class="col-form-label">Язык ленты RSS</label>
-                                <input id="feed-lang" type="text" class="form-control" name="template.feed.language" th:value="*{feed.language}" value="">
+                                <label for="template-feed-language" class="col-form-label">Язык ленты RSS</label>
+                                <input id="template-feed-language" type="text" class="form-control" name="template.feed.language" th:value="*{feed.language}" value="">
                             </div>
                             <div>
-                                <label for="feed-pubDate" class="col-form-label">Дата публикации</label>
-                                <input id="feed-pubDate" type="text" class="form-control" name="template.feed.pubDate" th:value="*{feed.pubDate}" value="">
+                                <label for="template-feed-pubDate" class="col-form-label">Дата публикации</label>
+                                <input id="template-feed-pubDate" type="text" class="form-control" name="template.feed.pubDate" th:value="*{feed.pubDate}" value="">
                             </div>
                         </div>
                     </div>
@@ -75,37 +75,37 @@
                                 <h6>Настройка шаблона поста</h6>
                             </div>
                             <div>
-                                <label for="root" class="col-form-label">Путь до корня объектов поста</label>
-                                <input id="root" type="text" class="form-control" name="template.root" th:value="*{root}" value="">
+                                <label for="template-root" class="col-form-label">Путь до корня объектов поста</label>
+                                <input id="template-root" type="text" class="form-control" name="template.root" th:value="*{root}" value="">
                             </div>
                             <div>
-                                <label for="post-guid" class="col-form-label">Уникальный идентификатор поста</label>
-                                <input id="post-guid" type="text" class="form-control" name="template.post.guid"
+                                <label for="template-post-guid" class="col-form-label">Уникальный идентификатор поста</label>
+                                <input id="template-post-guid" type="text" class="form-control" name="template.post.guid"
                                        th:value="*{post.guid}" value="">
                             </div>
                             <div>
-                                <label for="post-title" class="col-form-label">Заголовок</label>
-                                <input id="post-title" type="text" class="form-control" name="template.post.title"
+                                <label for="template-post-title" class="col-form-label">Заголовок</label>
+                                <input id="template-post-title" type="text" class="form-control" name="template.post.title"
                                        th:value="*{post.title}" value="">
                             </div>
                             <div>
-                                <label for="post-description" class="col-form-label">Описание</label>
-                                <input id="post-description" type="text" class="form-control"
+                                <label for="template-post-description" class="col-form-label">Описание</label>
+                                <input id="template-post-description" type="text" class="form-control"
                                        name="template.post.description" th:value="*{post.description}" value="">
                             </div>
                             <div>
-                                <label for="post-pubDate" class="col-form-label">Дата публикации</label>
-                                <input id="post-pubDate" type="text" class="form-control" name="template.post.pubDate"
+                                <label for="template-post-pubDate" class="col-form-label">Дата публикации</label>
+                                <input id="template-post-pubDate" type="text" class="form-control" name="template.post.pubDate"
                                        th:value="*{post.pubDate}" value="">
                             </div>
                             <div>
-                                <label for="post-author" class="col-form-label">Автор</label>
-                                <input id="post-author" type="text" class="form-control" name="template.post.author"
+                                <label for="template-post-author" class="col-form-label">Автор</label>
+                                <input id="template-post-author" type="text" class="form-control" name="template.post.author"
                                        th:value="*{post.author}" value="">
                             </div>
                             <div>
-                                <label for="post-link" class="col-form-label">Ссылка</label>
-                                <input id="post-link" type="text" class="form-control" name="template.post.link"
+                                <label for="template-post-link" class="col-form-label">Ссылка</label>
+                                <input id="template-post-link" type="text" class="form-control" name="template.post.link"
                                        th:value="*{post.link}" value="">
                             </div>
                         </div>
@@ -113,7 +113,8 @@
                 </div>
             </div>
         </div>
-        <button type="button" class="btn btn-outline-info" onclick="loadDefaultTemplate($('#template'))">Установить шаблон по умолчанию</button>
+
+        <button type="button" class="btn btn-outline-info" onclick="loadDefaultTemplate('template')">Загрузить шаблон по умолчанию для RSS</button>
     </div>
     <div class="modal-footer">
         <button type="button" class="btn btn-outline-danger mr-auto" th:data-href="@{delete/{id}(id=*{id})}"

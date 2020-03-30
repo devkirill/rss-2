@@ -19,16 +19,26 @@ public class DateUtil {
             "yyyy-MM-dd'T'HH:mm:ssZ",
             "dd.MM.yyyy HH:mm:ss Z"
     );
+    private final static List<Locale> LOCALES = Arrays.asList(Locale.US, new Locale("ru"));
     private final static Pattern TODAY_PATTERN = Pattern.compile("^\\s*(?:today|сегодня)\\s*(?:in|в)?\\s*(?<h>\\d{2}):(?<m>\\d{2})\\s*$");
     private final static Pattern YESTERDAY_PATTERN = Pattern.compile("^\\s*(?:yesterday|вчера)\\s*(?:in|в)?\\s*(?<h>\\d{2}):(?<m>\\d{2})\\s*$");
 
-    public static ZonedDateTime parse(String stringDate, String format) {
+    public static ZonedDateTime parse(String stringDate, String format, Locale locale) {
         try {
-            DateTimeFormatter formatter = DateTimeFormatter.ofPattern(format, Locale.US);
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern(format, locale);
             return ZonedDateTime.parse(stringDate, formatter);
         } catch (DateTimeParseException e) {
             return null;
         }
+    }
+
+    public static ZonedDateTime parse(String stringDate, String format) {
+        for (Locale locale : LOCALES) {
+            ZonedDateTime parsed = parse(stringDate, format, locale);
+            if (parsed != null)
+                return parsed;
+        }
+        return null;
     }
 
     public static ZonedDateTime parse(String stringDate) {

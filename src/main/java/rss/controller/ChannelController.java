@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import rss.model.db.Channel;
+import rss.model.db.template.Template;
 import rss.service.view.ChannelView;
 
 @Controller
@@ -45,5 +46,11 @@ public class ChannelController {
     @PostMapping(path = "/edit")
     public String update(@ModelAttribute("channel") Channel channel) {
         return update(null, channel);
+    }
+
+    @GetMapping(path = "/defaultTemplate")
+    @ResponseBody
+    public Template defaultTemplate() {
+        return channelView.getRssDefaultTemplate();
     }
 }

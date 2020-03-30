@@ -2,7 +2,9 @@ package rss.service.view;
 
 import org.springframework.stereotype.Service;
 import rss.model.db.Channel;
+import rss.model.db.template.Template;
 import rss.model.view.Channels;
+import rss.utils.DefaultTemplate;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -46,5 +48,10 @@ public class ChannelViewService implements ChannelView {
         }
 
         entityManager.flush();
+    }
+
+    @Override
+    public Template getRssDefaultTemplate() {
+        return DefaultTemplate.getRssTemplate();
     }
 }

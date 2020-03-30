@@ -96,6 +96,17 @@ function responseHandler(form, response)
     }
 }
 
+function loadTemplate(id, template) {
+    if (typeof template == 'string') {
+        $("#" + id).val(template);
+        return;
+    }
+    const pathPrefix = id.length == 0 ? path : id + '-';
+    for (let [key, value] of Object.entries(template)) {
+        loadTemplate(pathPrefix + key, value);
+    }
+}
+
 function loadDefaultTemplate(template)
 {
     $.ajax({
@@ -103,7 +114,7 @@ function loadDefaultTemplate(template)
         async: true,
         timeout: 100000,
         success: function(data) {
-            $(template).val(data)
+            loadTemplate(template, data);
         },
         error: function(e) {
             console.log("ERROR: ", e);

@@ -1,11 +1,13 @@
 package rss.utils;
 
 import rss.model.db.template.Template;
+import rss.model.db.template.TypeParser;
 
 public class DefaultTemplate {
     public static Template getRssTemplate() {
         Template template = new Template();
-        template.setRoot("//channel/item");
+
+        template.setType(TypeParser.XPath);
 
         template.getFeed().setTitle("//channel/title");
         template.getFeed().setDescription("//channel/description");
@@ -13,6 +15,8 @@ public class DefaultTemplate {
         template.getFeed().setImage("//channel/image/url");
         template.getFeed().setPubDate("//channel/pubDate|//channel/lastBuildDate");
         template.getFeed().setLink("//channel/link/text()");
+
+        template.setRoot("//channel/item");
 
         template.getPost().setTitle("title");
         template.getPost().setDescription("description");
