@@ -11,7 +11,7 @@
             <h5 class="card-title">
                 <a th:href="*{link}" th:text="*{title}">title</a>
             </h5>
-            <h6 class="card-subtitle mb-2 search-muted" th:if="*{pubDate} != null" th:text="${post.pubDate}">date</h6>
+            <h6 class="card-subtitle mb-2 search-muted" th:if="*{pubDate} != null" th:text="${T(rss.utils.RenderDateUtil).format(post.pubDate)}">date</h6>
 
             <div th:utext="*{description}"></div>
         </div>
