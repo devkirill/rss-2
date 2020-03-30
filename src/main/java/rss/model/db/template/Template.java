@@ -1,8 +1,12 @@
 package rss.model.db.template;
 
+import javax.validation.constraints.NotNull;
+
 public class Template {
+    @NotNull
     private TypeParser type;
 
+    @NotNull
     private String root;
 
     private FeedTemplate feed = new FeedTemplate();

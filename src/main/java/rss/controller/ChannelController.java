@@ -2,11 +2,17 @@ package rss.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
+import rss.controller.response.ResponseInfo;
+import rss.controller.response.message.MessageInfo;
+import rss.controller.response.redirect.RedirectInfo;
 import rss.model.db.Channel;
 import rss.model.db.template.Template;
 import rss.service.view.ChannelView;
+
+import javax.validation.Valid;
 
 @Controller
 @RequestMapping(path = "/channel")
@@ -22,6 +28,11 @@ public class ChannelController {
         return new ModelAndView("channel", "model", channelView.getChannels());
     }
 
+    @GetMapping(path = "/edit")
+    public ModelAndView edit() {
+        return edit(null);
+    }
+
     /**
      * Модель для создания и изменения каналов
      * @param id - id модели с настройками канала. Получение id изменяет уже существующий канал
@@ -31,21 +42,32 @@ public class ChannelController {
         return new ModelAndView("edit", "channel", channelView.getChannelById(id));
     }
 
-    @GetMapping(path = "/edit")
-    public ModelAndView edit() {
-        return edit(null);
+    @PostMapping(path = "/edit")
+    @ResponseBody
+    public ResponseInfo update(@Valid @ModelAttribute("channel") Channel channel, Errors errors) {
+        return update(null, channel, errors);
     }
 
     @PostMapping(path = "/edit/{id}")
-    public String update(@PathVariable Integer id, @ModelAttribute("channel") Channel channel) {
+    @ResponseBody
+    public ResponseInfo update(@PathVariable Integer id, @Valid @ModelAttribute("channel") Channel channel, Errors errors) {
+        MessageInfo validation = MessageInfo.createFrom(errors);
+
+        if (validation.hasErrors())
+        {
+            return validation;
+        }
+
         channelView.update(id, channel);
 
-        return "redirect:/edit/";
+        return new RedirectInfo("/channel/");
     }
 
-    @PostMapping(path = "/edit")
-    public String update(@ModelAttribute("channel") Channel channel) {
-        return update(null, channel);
+    @GetMapping(path = "/delete/{id}")
+    public String delete(@PathVariable Integer id) {
+        channelView.delete(id);
+
+        return "redirect:/channel/";
     }
 
     @GetMapping(path = "/defaultTemplate")

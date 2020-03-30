@@ -1,9 +1,11 @@
 package rss.service.view;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import rss.model.db.Channel;
 import rss.model.db.template.Template;
 import rss.model.view.Channels;
+import rss.service.loader.Harverster;
 import rss.utils.DefaultTemplate;
 
 import javax.persistence.EntityManager;
@@ -16,6 +18,9 @@ import java.util.List;
 public class ChannelViewService implements ChannelView {
     @PersistenceContext
     private EntityManager entityManager;
+
+    @Autowired
+    private Harverster harverster;
 
     @Override
     public Channels getChannels() {
@@ -46,6 +51,19 @@ public class ChannelViewService implements ChannelView {
             dbChannel.setMake(channel.isMake());
             dbChannel.setTemplate(channel.getTemplate());
         }
+
+        harverster.update(channel);
+
+        entityManager.flush();
+    }
+
+    @Override
+    public void delete(Integer id) {
+        Channel channel = entityManager.find(Channel.class, id);
+
+        channel.getPosts().forEach(entityManager::remove);
+        channel.getFeeds().forEach(entityManager::remove);
+        entityManager.remove(channel);
 
         entityManager.flush();
     }

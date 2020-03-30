@@ -24,6 +24,26 @@ public class Harverster {
     @Autowired
     private PostLoader parser;
 
+    public void update(Channel channel) {
+        Feed feed = parser.getFeed(channel);
+
+        populateNullFields(feed);
+
+        if (!feed.getPosts().isEmpty()) {
+            feed.setChannel(channel);
+            feed.getPosts().forEach(post -> {
+                post.setChannel(channel);
+                post.setFeed(feed);
+            });
+
+            entityManager.persist(feed);
+            Session session = entityManager.unwrap(Session.class);
+            feed.getPosts().forEach(session::saveOrUpdate);
+        }
+
+        entityManager.flush();
+    }
+
     @Scheduled(initialDelay = 0, fixedRate = 60 * 1000)
     public void update() {
         List<Channel> channels = entityManager
@@ -32,23 +52,7 @@ public class Harverster {
                         "   make = true", Channel.class)
                 .getResultList();
 
-        channels.forEach(channel -> {
-            Feed feed = parser.getFeed(channel);
-
-            populateNullFields(feed);
-
-            if (!feed.getPosts().isEmpty()) {
-                feed.setChannel(channel);
-                feed.getPosts().forEach(post -> {
-                    post.setChannel(channel);
-                    post.setFeed(feed);
-                });
-
-                entityManager.persist(feed);
-                Session session = entityManager.unwrap(Session.class);
-                feed.getPosts().forEach(session::saveOrUpdate);
-            }
-        });
+        channels.forEach(this::update);
 
         entityManager.flush();
     }

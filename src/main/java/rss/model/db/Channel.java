@@ -9,6 +9,7 @@ import org.hibernate.annotations.TypeDefs;
 import rss.model.db.template.Template;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,9 +29,11 @@ public class Channel {
     private int id;
 
     @Column
+    @NotNull
     private boolean make;
 
     @Column
+    @NotNull
     private String url;
 
     @Type(type = "jsonb")
@@ -39,6 +42,9 @@ public class Channel {
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "channel")
     private List<Post> posts = new ArrayList<>();
+
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "channel")
+    private List<Feed> feeds = new ArrayList<>();
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinFormula(value = "(SELECT max(f.id) FROM feed f WHERE f.channel_id = id)")
@@ -84,6 +90,14 @@ public class Channel {
 
     public void setPosts(List<Post> posts) {
         this.posts = posts;
+    }
+
+    public List<Feed> getFeeds() {
+        return feeds;
+    }
+
+    public void setFeeds(List<Feed> feeds) {
+        this.feeds = feeds;
     }
 
     public Feed getLastFeed() {

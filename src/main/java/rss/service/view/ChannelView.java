@@ -11,5 +11,7 @@ public interface ChannelView {
 
     void update(Integer id, Channel channel);
 
+    void delete(Integer id);
+
     Template getRssDefaultTemplate();
 }
