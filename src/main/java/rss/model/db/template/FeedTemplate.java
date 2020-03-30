@@ -1,9 +1,6 @@
 package rss.model.db.template;
 
-import javax.validation.constraints.NotNull;
-
 public class FeedTemplate {
-    @NotNull
     private String title;
 
     private String description;

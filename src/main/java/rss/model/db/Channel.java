@@ -9,6 +9,8 @@ import org.hibernate.annotations.TypeDefs;
 import rss.model.db.template.Template;
 
 import javax.persistence.*;
+import javax.validation.Valid;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
@@ -33,11 +35,12 @@ public class Channel {
     private boolean make;
 
     @Column
-    @NotNull
+    @NotEmpty
     private String url;
 
     @Type(type = "jsonb")
     @Column(columnDefinition = "jsonb")
+    @Valid
     private Template template = new Template();
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "channel")

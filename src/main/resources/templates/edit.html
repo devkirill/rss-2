@@ -24,9 +24,10 @@
             <div class="col-lg-6">
                 <div class="form-group">
                     <label for="template-type">Парсер</label>
-                    <select class="form-control" id="template-type" name="template.type" th:field="*{template.type}">
+                    <select class="form-control" id="template-type" name="template.type" data-editor-for="template.type" th:field="*{template.type}">
                         <option th:each="type : ${T(rss.model.db.template.TypeParser).values()}" th:value="${type}" th:text="${type}"></option>
                     </select>
+                    <div class="invalid-feedback" data-errors-for="template.type"></div>
                 </div>
             </div>
         </div>
@@ -41,27 +42,33 @@
                             </div>
                             <div>
                                 <label for="template-feed-title" class="col-form-label">Название сайта</label>
-                                <input id="template-feed-title" type="text" class="form-control" name="template.feed.title" th:value="*{feed.title}" value="">
+                                <input id="template-feed-title" type="text" class="form-control" name="template.feed.title" data-editor-for="template.feed.title" th:value="*{feed.title}" value="">
+                                <div class="invalid-feedback" data-errors-for="template.feed.title"></div>
                             </div>
                             <div>
                                 <label for="template-feed-description" class="col-form-label">Описание сайта</label>
-                                <input id="template-feed-description" type="text" class="form-control" name="template.feed.description" th:value="*{feed.description}" value="">
+                                <input id="template-feed-description" type="text" class="form-control" name="template.feed.description" data-editor-for="template.feed.description" th:value="*{feed.description}" value="">
+                                <div class="invalid-feedback" data-errors-for="template.feed.description"></div>
                             </div>
                             <div>
                                 <label for="template-feed-link" class="col-form-label">URL сайта</label>
-                                <input id="template-feed-link" type="text" class="form-control" name="template.feed.link" th:value="*{feed.link}" value="">
+                                <input id="template-feed-link" type="text" class="form-control" name="template.feed.link" data-editor-for="template.feed.link" th:value="*{feed.link}" value="">
+                                <div class="invalid-feedback" data-errors-for="template.feed.link"></div>
                             </div>
                             <div>
                                 <label for="template-feed-image" class="col-form-label">Изображение сайта</label>
-                                <input id="template-feed-image" type="text" class="form-control" name="template.feed.image" th:value="*{feed.image}" value="">
+                                <input id="template-feed-image" type="text" class="form-control" name="template.feed.image" data-editor-for="template.feed.image" th:value="*{feed.image}" value="">
+                                <div class="invalid-feedback" data-errors-for="template.feed.image"></div>
                             </div>
                             <div>
                                 <label for="template-feed-language" class="col-form-label">Язык ленты RSS</label>
-                                <input id="template-feed-language" type="text" class="form-control" name="template.feed.language" th:value="*{feed.language}" value="">
+                                <input id="template-feed-language" type="text" class="form-control" name="template.feed.language" data-editor-for="template.feed.language" th:value="*{feed.language}" value="">
+                                <div class="invalid-feedback" data-errors-for="template.feed.language"></div>
                             </div>
                             <div>
                                 <label for="template-feed-pubDate" class="col-form-label">Дата публикации</label>
-                                <input id="template-feed-pubDate" type="text" class="form-control" name="template.feed.pubDate" th:value="*{feed.pubDate}" value="">
+                                <input id="template-feed-pubDate" type="text" class="form-control" name="template.feed.pubDate" data-editor-for="template.feed.pubDate" th:value="*{feed.pubDate}" value="">
+                                <div class="invalid-feedback" data-errors-for="template.feed.pubDate"></div>
                             </div>
                         </div>
                     </div>
@@ -76,37 +83,38 @@
                             </div>
                             <div>
                                 <label for="template-root" class="col-form-label">Путь до корня объектов поста</label>
-                                <input id="template-root" type="text" class="form-control" name="template.root" th:value="*{root}" value="">
+                                <input id="template-root" type="text" class="form-control" name="template.root" data-editor-for="template.root" th:value="*{root}" value="">
+                                <div class="invalid-feedback" data-errors-for="template.root"></div>
                             </div>
                             <div>
                                 <label for="template-post-guid" class="col-form-label">Уникальный идентификатор поста</label>
-                                <input id="template-post-guid" type="text" class="form-control" name="template.post.guid"
-                                       th:value="*{post.guid}" value="">
+                                <input id="template-post-guid" type="text" class="form-control" name="template.post.guid" data-editor-for="template.post.guid" th:value="*{post.guid}" value="">
+                                <div class="invalid-feedback" data-errors-for="template.post.guid"></div>
                             </div>
                             <div>
                                 <label for="template-post-title" class="col-form-label">Заголовок</label>
-                                <input id="template-post-title" type="text" class="form-control" name="template.post.title"
-                                       th:value="*{post.title}" value="">
+                                <input id="template-post-title" type="text" class="form-control" name="template.post.title" data-editor-for="template.post.title" th:value="*{post.title}" value="">
+                                <div class="invalid-feedback" data-errors-for="template.post.title"></div>
                             </div>
                             <div>
                                 <label for="template-post-description" class="col-form-label">Описание</label>
-                                <input id="template-post-description" type="text" class="form-control"
-                                       name="template.post.description" th:value="*{post.description}" value="">
+                                <input id="template-post-description" type="text" class="form-control" name="template.post.description" data-editor-for="template.post.description" th:value="*{post.description}" value="">
+                                <div class="invalid-feedback" data-errors-for="template.post.description"></div>
                             </div>
                             <div>
                                 <label for="template-post-pubDate" class="col-form-label">Дата публикации</label>
-                                <input id="template-post-pubDate" type="text" class="form-control" name="template.post.pubDate"
-                                       th:value="*{post.pubDate}" value="">
+                                <input id="template-post-pubDate" type="text" class="form-control" name="template.post.pubDate" data-editor-for="template.post.pubDate" th:value="*{post.pubDate}" value="">
+                                <div class="invalid-feedback" data-errors-for="template.post.pubDate"></div>
                             </div>
                             <div>
                                 <label for="template-post-author" class="col-form-label">Автор</label>
-                                <input id="template-post-author" type="text" class="form-control" name="template.post.author"
-                                       th:value="*{post.author}" value="">
+                                <input id="template-post-author" type="text" class="form-control" name="template.post.author" data-editor-for="template.post.author" th:value="*{post.author}" value="">
+                                <div class="invalid-feedback" data-errors-for="template.post.author"></div>
                             </div>
                             <div>
                                 <label for="template-post-link" class="col-form-label">Ссылка</label>
-                                <input id="template-post-link" type="text" class="form-control" name="template.post.link"
-                                       th:value="*{post.link}" value="">
+                                <input id="template-post-link" type="text" class="form-control" name="template.post.link" data-editor-for="template.post.link" th:value="*{post.link}" value="">
+                                <div class="invalid-feedback" data-errors-for="template.post.link"></div>
                             </div>
                         </div>
                     </div>

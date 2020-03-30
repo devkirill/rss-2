@@ -1,15 +1,15 @@
 package rss.model.db.template;
 
-import javax.validation.constraints.NotNull;
+import javax.validation.constraints.NotEmpty;
 
 public class PostTemplate {
-    @NotNull
+    @NotEmpty
     private String guid;
 
-    @NotNull
+    @NotEmpty
     private String title;
 
-    @NotNull
+    @NotEmpty
     private String description;
 
     private String pubDate;

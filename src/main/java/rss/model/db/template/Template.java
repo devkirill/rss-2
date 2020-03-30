@@ -1,16 +1,20 @@
 package rss.model.db.template;
 
+import javax.validation.Valid;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
 public class Template {
     @NotNull
     private TypeParser type;
 
-    @NotNull
+    @NotEmpty
     private String root;
 
+    @Valid
     private FeedTemplate feed = new FeedTemplate();
 
+    @Valid
     private PostTemplate post = new PostTemplate();
 
     //region getters and setters

@@ -52,7 +52,9 @@ public class ChannelViewService implements ChannelView {
             dbChannel.setTemplate(channel.getTemplate());
         }
 
-        harverster.update(channel);
+        if (channel.isMake()) {
+            harverster.update(channel);
+        }
 
         entityManager.flush();
     }
